@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.pedrompcardoso.germanicus.ui.MainMenuFragment"
+        android:label="Germanicus"
+        tools:layout="@layout/fragment_main_menu" />
+
+    <fragment
+        android:id="@+id/genderGameFragment"
+        android:name="com.pedrompcardoso.germanicus.ui.GenderGameFragment"
+        android:label="Gender Guessing"
+        tools:layout="@layout/fragment_gender_game" />
+
+    <fragment
+        android:id="@+id/translationGameFragment"
+        android:name="com.pedrompcardoso.germanicus.ui.TranslationGameFragment"
+        android:label="Translation"
+        tools:layout="@layout/fragment_translation_game" />
+
+    <fragment
+        android:id="@+id/gameResultFragment"
+        android:name="com.pedrompcardoso.germanicus.ui.GameResultFragment"
+        android:label="Game Results"
+        tools:layout="@layout/fragment_game_result">
+        <argument
+            android:name="score"
+            app:argType="integer" />
+        <argument
+            android:name="totalQuestions"
+            app:argType="integer" />
+        <argument
+            android:name="gameMode"
+            app:argType="string" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_mainMenuFragment_to_genderGameFragment"
+        app:destination="@id/genderGameFragment" />
+
+    <action
+        android:id="@+id/action_mainMenuFragment_to_translationGameFragment"
+        app:destination="@id/translationGameFragment" />
+
+    <action
+        android:id="@+id/action_genderGameFragment_to_gameResultFragment"
+        app:destination="@id/gameResultFragment" />
+
+    <action
+        android:id="@+id/action_translationGameFragment_to_gameResultFragment"
+        app:destination="@id/gameResultFragment" />
+
+    <action
+        android:id="@+id/action_gameResultFragment_to_genderGameFragment"
+        app:destination="@id/genderGameFragment"
+        app:popUpTo="@id/mainMenuFragment"
+        app:popUpToInclusive="false" />
+
+    <action
+        android:id="@+id/action_gameResultFragment_to_translationGameFragment"
+        app:destination="@id/translationGameFragment"
+        app:popUpTo="@id/mainMenuFragment"
+        app:popUpToInclusive="false" />
+
+    <action
+        android:id="@+id/action_gameResultFragment_to_mainMenuFragment"
+        app:destination="@id/mainMenuFragment"
+        app:popUpTo="@id/mainMenuFragment"
+        app:popUpToInclusive="true" />
+
+</navigation> 

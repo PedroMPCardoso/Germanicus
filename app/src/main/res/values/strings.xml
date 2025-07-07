@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Germanicus</string>
+    <string name="gender_guessing">Gender Guessing</string>
+    <string name="translation">Translation</string>
+    <string name="play_again">Play Again</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="submit_answer">Submit Answer</string>
+    <string name="next">Next</string>
+    <string name="game_over">Game Over!</string>
+    <string name="final_score">Final Score: %1$d/%2$d</string>
+    <string name="score">Score: %1$d/%2$d</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect!</string>
+    <string name="correct_answer">Correct answer: %1$s</string>
+    <string name="enter_answer">Enter your answer</string>
+    <string name="what_gender">What is the gender of this word?</string>
+    <string name="what_translation">What is the English translation?</string>
+    <string name="learn_german_fun">Learn German the Fun Way!</string>
+    <string name="guess_gender_description">Guess the gender of German words</string>
+    <string name="translate_description">Translate between German and English</string>
+    <string name="version">Version 1.0</string>
 </resources>

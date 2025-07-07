@@ -1,0 +1,115 @@
+package com.pedrompcardoso.germanicus.ui
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.view.inputmethod.EditorInfo
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.pedrompcardoso.germanicus.R
+import com.pedrompcardoso.germanicus.game.GameMode
+import com.pedrompcardoso.germanicus.game.GameViewModel
+import com.pedrompcardoso.germanicus.databinding.FragmentTranslationGameBinding
+
+class TranslationGameFragment : Fragment() {
+    
+    private var _binding: FragmentTranslationGameBinding? = null
+    private val binding get() = _binding!!
+    
+    private val viewModel: GameViewModel by activityViewModels()
+    
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentTranslationGameBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        
+        viewModel.startGame(GameMode.TRANSLATION)
+        setupObservers()
+        setupClickListeners()
+    }
+    
+    private fun setupObservers() {
+        viewModel.currentWord.observe(viewLifecycleOwner) { word ->
+            binding.germanWordTextView.text = word.german
+        }
+        
+        viewModel.score.observe(viewLifecycleOwner) { score ->
+            val total = viewModel.totalQuestions.value ?: 0
+            binding.scoreTextView.text = getString(R.string.score, score, total)
+        }
+        
+        viewModel.showResult.observe(viewLifecycleOwner) { show ->
+            binding.resultCard.visibility = if (show) View.VISIBLE else View.GONE
+            binding.answerInputLayout.visibility = if (show) View.GONE else View.VISIBLE
+            binding.submitButton.visibility = if (show) View.GONE else View.VISIBLE
+        }
+        
+        viewModel.isCorrect.observe(viewLifecycleOwner) { isCorrect ->
+            if (isCorrect != null) {
+                val word = viewModel.currentWord.value
+                val correctAnswer = word?.english ?: ""
+                
+                binding.resultTextView.text = if (isCorrect) getString(R.string.correct) else getString(R.string.incorrect)
+                binding.resultTextView.setTextColor(
+                    if (isCorrect) requireContext().getColor(android.R.color.holo_green_dark)
+                    else requireContext().getColor(android.R.color.holo_red_dark)
+                )
+                binding.correctAnswerTextView.text = getString(R.string.correct_answer, correctAnswer)
+            }
+        }
+        
+        viewModel.isGameActive.observe(viewLifecycleOwner) { isActive ->
+            if (!isActive) {
+                val score = viewModel.score.value ?: 0
+                val total = viewModel.totalQuestions.value ?: 0
+                val action = TranslationGameFragmentDirections.actionTranslationGameFragmentToGameResultFragment(
+                    score = score,
+                    totalQuestions = total,
+                    gameMode = "Translation"
+                )
+                findNavController().navigate(action)
+            }
+        }
+    }
+    
+    private fun setupClickListeners() {
+        binding.submitButton.setOnClickListener {
+            submitAnswer()
+        }
+        
+        binding.answerEditText.setOnEditorActionListener { _, actionId, _ ->
+            if (actionId == EditorInfo.IME_ACTION_DONE) {
+                submitAnswer()
+                true
+            } else {
+                false
+            }
+        }
+        
+        binding.nextButton.setOnClickListener {
+            viewModel.nextQuestion()
+            binding.answerEditText.text?.clear()
+        }
+    }
+    
+    private fun submitAnswer() {
+        val answer = binding.answerEditText.text?.toString() ?: ""
+        if (answer.isNotBlank()) {
+            viewModel.checkTranslationAnswer(answer)
+        }
+    }
+    
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+} 
