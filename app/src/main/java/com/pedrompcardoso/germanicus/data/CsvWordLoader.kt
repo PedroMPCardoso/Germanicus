@@ -19,7 +19,7 @@ object CsvWordLoader {
             var line: String?
             while (reader.readLine().also { line = it } != null) {
                 val parts = line!!.split(",")
-                if (parts.size == 4) {
+                if (parts.size >= 4) {
                     val german = parts[0].trim()
                     val english = parts[1].trim()
                     val gender = Gender.valueOf(parts[2].trim())
