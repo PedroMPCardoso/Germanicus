@@ -14,6 +14,171 @@ Milch,milk,FEMININE,EASY
 Kaffee,coffee,MASCULINE,EASY
 Tee,tea,MASCULINE,EASY
 Apfel,apple,MASCULINE,EASY
+Banane,banana,FEMININE,EASY
+Orange,orange,FEMININE,EASY
+Tomate,tomato,FEMININE,EASY
+Kartoffel,potato,FEMININE,EASY
+Zwiebel,onion,FEMININE,EASY
+Karotte,carrot,FEMININE,EASY
+Salat,lettuce,MASCULINE,EASY
+Fisch,fish,MASCULINE,EASY
+Fleisch,meat,NEUTER,EASY
+Ei,egg,NEUTER,EASY
+Käse,cheese,MASCULINE,EASY
+Butter,butter,FEMININE,EASY
+Zucker,sugar,MASCULINE,EASY
+Salz,salt,NEUTER,EASY
+Pfeffer,pepper,MASCULINE,EASY
+Öl,oil,NEUTER,EASY
+Essen,food,NEUTER,EASY
+Trinken,drink,NEUTER,EASY
+Suppe,soup,FEMININE,EASY
+Pizza,pizza,FEMININE,EASY
+Pasta,pasta,FEMININE,EASY
+Reis,rice,MASCULINE,EASY
+Nudeln,noodles,PLURAL,EASY
+Gemüse,vegetables,NEUTER,EASY
+Obst,fruit,NEUTER,EASY
+Mutter,mother,FEMININE,EASY
+Vater,father,MASCULINE,EASY
+Sohn,son,MASCULINE,EASY
+Tochter,daughter,FEMININE,EASY
+Bruder,brother,MASCULINE,EASY
+Schwester,sister,FEMININE,EASY
+Oma,grandmother,FEMININE,EASY
+Opa,grandfather,MASCULINE,EASY
+Onkel,uncle,MASCULINE,EASY
+Tante,aunt,FEMININE,EASY
+Cousin,cousin,MASCULINE,EASY
+Cousine,cousin,FEMININE,EASY
+Baby,baby,NEUTER,EASY
+Kind,child,NEUTER,EASY
+Junge,boy,MASCULINE,EASY
+Mädchen,girl,NEUTER,EASY
+Mann,man,MASCULINE,EASY
+Frau,woman,FEMININE,EASY
+Freund,friend,MASCULINE,EASY
+Freundin,friend,FEMININE,EASY
+Lehrer,teacher,MASCULINE,EASY
+Lehrerin,teacher,FEMININE,EASY
+Schüler,student,MASCULINE,EASY
+Schülerin,student,FEMININE,EASY
+Arzt,doctor,MASCULINE,EASY
+Ärztin,doctor,FEMININE,EASY
+Koch,cook,MASCULINE,EASY
+Köchin,cook,FEMININE,EASY
+Bäcker,baker,MASCULINE,EASY
+Bäckerin,baker,FEMININE,EASY
+Maler,painter,MASCULINE,EASY
+Malerin,painter,FEMININE,EASY
+Musiker,musician,MASCULINE,EASY
+Musikerin,musician,FEMININE,EASY
+Schriftsteller,writer,MASCULINE,EASY
+Schriftstellerin,writer,FEMININE,EASY
+Künstler,artist,MASCULINE,EASY
+Künstlerin,artist,FEMININE,EASY
+Ingenieur,engineer,MASCULINE,EASY
+Ingenieurin,engineer,FEMININE,EASY
+Programmierer,programmer,MASCULINE,EASY
+Programmiererin,programmer,FEMININE,EASY
+Verkäufer,salesperson,MASCULINE,EASY
+Verkäuferin,salesperson,FEMININE,EASY
+Kassierer,cashier,MASCULINE,EASY
+Kassiererin,cashier,FEMININE,EASY
+Buchhalter,accountant,MASCULINE,EASY
+Buchhalterin,accountant,FEMININE,EASY
+Anwalt,lawyer,MASCULINE,EASY
+Anwältin,lawyer,FEMININE,EASY
+Richter,judge,MASCULINE,EASY
+Richterin,judge,FEMININE,EASY
+Polizist,police officer,MASCULINE,EASY
+Polizistin,police officer,FEMININE,EASY
+Feuerwehrmann,firefighter,MASCULINE,EASY
+Feuerwehrfrau,firefighter,FEMININE,EASY
+Soldat,soldier,MASCULINE,EASY
+Soldatin,soldier,FEMININE,EASY
+Pilot,pilot,MASCULINE,EASY
+Pilotin,pilot,FEMININE,EASY
+Kapitän,captain,MASCULINE,EASY
+Kapitänin,captain,FEMININE,EASY
+Kellner,waiter,MASCULINE,EASY
+Kellnerin,waitress,FEMININE,EASY
+Koch,chef,MASCULINE,EASY
+Köchin,chef,FEMININE,EASY
+Fotograf,photographer,MASCULINE,EASY
+Fotografin,photographer,FEMININE,EASY
+Journalist,journalist,MASCULINE,EASY
+Journalistin,journalist,FEMININE,EASY
+Reporter,reporter,MASCULINE,EASY
+Reporterin,reporter,FEMININE,EASY
+Schauspieler,actor,MASCULINE,EASY
+Schauspielerin,actress,FEMININE,EASY
+Regisseur,director,MASCULINE,EASY
+Regisseurin,director,FEMININE,EASY
+Produzent,producer,MASCULINE,EASY
+Produzentin,producer,FEMININE,EASY
+Kameramann,cameraman,MASCULINE,EASY
+Kamerafrau,camerawoman,FEMININE,EASY
+Tontechniker,sound engineer,MASCULINE,EASY
+Tontechnikerin,sound engineer,FEMININE,EASY
+Beleuchter,lighting technician,MASCULINE,EASY
+Beleuchterin,lighting technician,FEMININE,EASY
+Maskenbildner,makeup artist,MASCULINE,EASY
+Maskenbildnerin,makeup artist,FEMININE,EASY
+Kostümbildner,costume designer,MASCULINE,EASY
+Kostümbildnerin,costume designer,FEMININE,EASY
+Bühnenbildner,set designer,MASCULINE,EASY
+Bühnenbildnerin,set designer,FEMININE,EASY
+Choreograf,choreographer,MASCULINE,EASY
+Choreografin,choreographer,FEMININE,EASY
+Tänzer,dancer,MASCULINE,EASY
+Tänzerin,dancer,FEMININE,EASY
+Sänger,singer,MASCULINE,EASY
+Sängerin,singer,FEMININE,EASY
+Gitarrist,guitarist,MASCULINE,EASY
+Gitarristin,guitarist,FEMININE,EASY
+Pianist,pianist,MASCULINE,EASY
+Pianistin,pianist,FEMININE,EASY
+Drummer,drummer,MASCULINE,EASY
+Drummerin,drummer,FEMININE,EASY
+Bassist,bassist,MASCULINE,EASY
+Bassistin,bassist,FEMININE,EASY
+Saxophonist,saxophonist,MASCULINE,EASY
+Saxophonistin,saxophonist,FEMININE,EASY
+Trompeter,trumpeter,MASCULINE,EASY
+Trompeterin,trumpeter,FEMININE,EASY
+Flötist,flutist,MASCULINE,EASY
+Flötistin,flutist,FEMININE,EASY
+Klarinettist,clarinetist,MASCULINE,EASY
+Klarinettistin,clarinetist,FEMININE,EASY
+Oboist,oboist,MASCULINE,EASY
+Oboistin,oboist,FEMININE,EASY
+Fagottist,bassoonist,MASCULINE,EASY
+Fagottistin,bassoonist,FEMININE,EASY
+Hornist,hornist,MASCULINE,EASY
+Hornistin,hornist,FEMININE,EASY
+Posaunist,trombonist,MASCULINE,EASY
+Posaunistin,trombonist,FEMININE,EASY
+Tubist,tubist,MASCULINE,EASY
+Tubistin,tubist,FEMININE,EASY
+Paukist,timpanist,MASCULINE,EASY
+Paukistin,timpanist,FEMININE,EASY
+Schlagzeuger,percussionist,MASCULINE,EASY
+Schlagzeugerin,percussionist,FEMININE,EASY
+Harpist,harpist,MASCULINE,EASY
+Harpistin,harpist,FEMININE,EASY
+Organist,organist,MASCULINE,EASY
+Organistin,organist,FEMININE,EASY
+Cembalist,harpsichordist,MASCULINE,EASY
+Cembalistin,harpsichordist,FEMININE,EASY
+Violinist,violinist,MASCULINE,EASY
+Violinistin,violinist,FEMININE,EASY
+Bratschist,violist,MASCULINE,EASY
+Bratschistin,violist,FEMININE,EASY
+Cellist,cellist,MASCULINE,EASY
+Cellistin,cellist,FEMININE,EASY
+Kontrabassist,double bassist,MASCULINE,EASY
+Kontrabassistin,double bassist,FEMININE,EASY
 Computer,computer,MASCULINE,MEDIUM
 Telefon,telephone,NEUTER,MEDIUM
 Zeitung,newspaper,FEMININE,MEDIUM
@@ -29,6 +194,262 @@ Monat,month,MASCULINE,MEDIUM
 Woche,week,FEMININE,MEDIUM
 Stadt,city,FEMININE,MEDIUM
 Land,country,NEUTER,MEDIUM
+Dorf,village,NEUTER,MEDIUM
+Straße,street,FEMININE,MEDIUM
+Weg,path,MASCULINE,MEDIUM
+Platz,square,MASCULINE,MEDIUM
+Park,park,MASCULINE,MEDIUM
+Garten,garden,MASCULINE,MEDIUM
+Wald,forest,MASCULINE,MEDIUM
+Berg,mountain,MASCULINE,MEDIUM
+Hügel,hill,MASCULINE,MEDIUM
+Tal,valley,NEUTER,MEDIUM
+Fluss,river,MASCULINE,MEDIUM
+See,lake,MASCULINE,MEDIUM
+Meer,sea,NEUTER,MEDIUM
+Ozean,ocean,MASCULINE,MEDIUM
+Insel,island,FEMININE,MEDIUM
+Küste,coast,FEMININE,MEDIUM
+Strand,beach,MASCULINE,MEDIUM
+Wüste,desert,FEMININE,MEDIUM
+Regen,rain,MASCULINE,MEDIUM
+Schnee,snow,MASCULINE,MEDIUM
+Eis,ice,NEUTER,MEDIUM
+Wind,wind,MASCULINE,MEDIUM
+Sturm,storm,MASCULINE,MEDIUM
+Blitz,lightning,MASCULINE,MEDIUM
+Donner,thunder,MASCULINE,MEDIUM
+Wolke,cloud,FEMININE,MEDIUM
+Sonne,sun,FEMININE,MEDIUM
+Mond,moon,MASCULINE,MEDIUM
+Stern,star,MASCULINE,MEDIUM
+Himmel,sky,MASCULINE,MEDIUM
+Erde,earth,FEMININE,MEDIUM
+Welt,world,FEMININE,MEDIUM
+Universum,universe,NEUTER,MEDIUM
+Galaxie,galaxy,FEMININE,MEDIUM
+Planet,planet,MASCULINE,MEDIUM
+Sonne,sun,FEMININE,MEDIUM
+Merkur,Mercury,MASCULINE,MEDIUM
+Venus,Venus,FEMININE,MEDIUM
+Mars,Mars,MASCULINE,MEDIUM
+Jupiter,Jupiter,MASCULINE,MEDIUM
+Saturn,Saturn,MASCULINE,MEDIUM
+Uranus,Uranus,MASCULINE,MEDIUM
+Neptun,Neptune,MASCULINE,MEDIUM
+Pluto,Pluto,MASCULINE,MEDIUM
+Komet,comet,MASCULINE,MEDIUM
+Meteor,meteor,MASCULINE,MEDIUM
+Asteroid,asteroid,MASCULINE,MEDIUM
+Raum,space,NEUTER,MEDIUM
+Rakete,rocket,FEMININE,MEDIUM
+Satellit,satellite,MASCULINE,MEDIUM
+Teleskop,telescope,NEUTER,MEDIUM
+Mikroskop,microscope,NEUTER,MEDIUM
+Labor,laboratory,NEUTER,MEDIUM
+Experiment,experiment,NEUTER,MEDIUM
+Theorie,theory,FEMININE,MEDIUM
+Hypothese,hypothesis,FEMININE,MEDIUM
+Forschung,research,FEMININE,MEDIUM
+Entdeckung,discovery,FEMININE,MEDIUM
+Erfindung,invention,FEMININE,MEDIUM
+Innovation,innovation,FEMININE,MEDIUM
+Technologie,technology,FEMININE,MEDIUM
+Wissenschaft,science,FEMININE,MEDIUM
+Mathematik,mathematics,FEMININE,MEDIUM
+Physik,physics,FEMININE,MEDIUM
+Chemie,chemistry,FEMININE,MEDIUM
+Biologie,biology,FEMININE,MEDIUM
+Geologie,geology,FEMININE,MEDIUM
+Astronomie,astronomy,FEMININE,MEDIUM
+Meteorologie,meteorology,FEMININE,MEDIUM
+Ökologie,ecology,FEMININE,MEDIUM
+Psychologie,psychology,FEMININE,MEDIUM
+Soziologie,sociology,FEMININE,MEDIUM
+Philosophie,philosophy,FEMININE,MEDIUM
+Geschichte,history,FEMININE,MEDIUM
+Geographie,geography,FEMININE,MEDIUM
+Literatur,literature,FEMININE,MEDIUM
+Kunst,art,FEMININE,MEDIUM
+Musik,music,FEMININE,MEDIUM
+Theater,theater,NEUTER,MEDIUM
+Kino,cinema,NEUTER,MEDIUM
+Museum,museum,NEUTER,MEDIUM
+Bibliothek,library,FEMININE,MEDIUM
+Schule,school,FEMININE,MEDIUM
+Universität,university,FEMININE,MEDIUM
+Hochschule,university,FEMININE,MEDIUM
+Institut,institute,NEUTER,MEDIUM
+Akademie,academy,FEMININE,MEDIUM
+Klasse,class,FEMININE,MEDIUM
+Kurs,course,MASCULINE,MEDIUM
+Semester,semester,NEUTER,MEDIUM
+Vorlesung,lecture,FEMININE,MEDIUM
+Seminar,seminar,NEUTER,MEDIUM
+Workshop,workshop,MASCULINE,MEDIUM
+Konferenz,conference,FEMININE,MEDIUM
+Kongress,congress,MASCULINE,MEDIUM
+Symposium,symposium,NEUTER,MEDIUM
+Kolloquium,colloquium,NEUTER,MEDIUM
+Präsentation,presentation,FEMININE,MEDIUM
+Vortrag,lecture,MASCULINE,MEDIUM
+Referat,report,NEUTER,MEDIUM
+Hausaufgabe,homework,FEMININE,MEDIUM
+Prüfung,exam,FEMININE,MEDIUM
+Test,test,MASCULINE,MEDIUM
+Klausur,exam,FEMININE,MEDIUM
+Diplom,diploma,NEUTER,MEDIUM
+Zertifikat,certificate,NEUTER,MEDIUM
+Urkunde,certificate,FEMININE,MEDIUM
+Zeugnis,report card,NEUTER,MEDIUM
+Note,grade,FEMININE,MEDIUM
+Bewertung,assessment,FEMININE,MEDIUM
+Feedback,feedback,NEUTER,MEDIUM
+Kritik,criticism,FEMININE,MEDIUM
+Kommentar,comment,MASCULINE,MEDIUM
+Anmerkung,note,FEMININE,MEDIUM
+Hinweis,hint,MASCULINE,MEDIUM
+Tipp,tip,MASCULINE,MEDIUM
+Ratschlag,advice,MASCULINE,MEDIUM
+Empfehlung,recommendation,FEMININE,MEDIUM
+Vorschlag,suggestion,MASCULINE,MEDIUM
+Idee,idea,FEMININE,MEDIUM
+Konzept,concept,NEUTER,MEDIUM
+Plan,plan,MASCULINE,MEDIUM
+Strategie,strategy,FEMININE,MEDIUM
+Methode,method,FEMININE,MEDIUM
+Technik,technique,FEMININE,MEDIUM
+Verfahren,procedure,NEUTER,MEDIUM
+Prozess,process,MASCULINE,MEDIUM
+System,system,NEUTER,MEDIUM
+Struktur,structure,FEMININE,MEDIUM
+Organisation,organization,FEMININE,MEDIUM
+Institution,institution,FEMININE,MEDIUM
+Behörde,authority,FEMININE,MEDIUM
+Ministerium,ministry,NEUTER,MEDIUM
+Abteilung,department,FEMININE,MEDIUM
+Büro,office,NEUTER,MEDIUM
+Firma,company,FEMININE,MEDIUM
+Unternehmen,company,NEUTER,MEDIUM
+Konzern,corporation,MASCULINE,MEDIUM
+Betrieb,business,MASCULINE,MEDIUM
+Geschäft,shop,NEUTER,MEDIUM
+Laden,shop,MASCULINE,MEDIUM
+Markt,market,MASCULINE,MEDIUM
+Supermarkt,supermarket,MASCULINE,MEDIUM
+Kaufhaus,department store,NEUTER,MEDIUM
+Einkaufszentrum,shopping center,NEUTER,MEDIUM
+Mall,shopping mall,FEMININE,MEDIUM
+Boutique,boutique,FEMININE,MEDIUM
+Apotheke,pharmacy,FEMININE,MEDIUM
+Drogerie,drugstore,FEMININE,MEDIUM
+Bäckerei,bakery,FEMININE,MEDIUM
+Metzgerei,butcher shop,FEMININE,MEDIUM
+Konditorei,pastry shop,FEMININE,MEDIUM
+Eisdiele,ice cream parlor,FEMININE,MEDIUM
+Café,café,NEUTER,MEDIUM
+Restaurant,restaurant,NEUTER,MEDIUM
+Gasthaus,inn,NEUTER,MEDIUM
+Hotel,hotel,NEUTER,MEDIUM
+Pension,guesthouse,FEMININE,MEDIUM
+Hostel,hostel,NEUTER,MEDIUM
+Campingplatz,campsite,MASCULINE,MEDIUM
+Zeltplatz,campsite,MASCULINE,MEDIUM
+Camping,camping,NEUTER,MEDIUM
+Zelt,tent,NEUTER,MEDIUM
+Schlafsack,sleeping bag,MASCULINE,MEDIUM
+Rucksack,backpack,MASCULINE,MEDIUM
+Koffer,suitcase,MASCULINE,MEDIUM
+Tasche,bag,FEMININE,MEDIUM
+Handtasche,handbag,FEMININE,MEDIUM
+Geldbörse,wallet,FEMININE,MEDIUM
+Brieftasche,wallet,FEMININE,MEDIUM
+Portemonnaie,wallet,NEUTER,MEDIUM
+Schlüssel,key,MASCULINE,MEDIUM
+Schlüsselbund,keychain,MASCULINE,MEDIUM
+Türschloss,door lock,NEUTER,MEDIUM
+Vorhängeschloss,padlock,NEUTER,MEDIUM
+Sicherheitsschlüssel,security key,MASCULINE,MEDIUM
+Alarmsystem,alarm system,NEUTER,MEDIUM
+Sicherheitskamera,security camera,FEMININE,MEDIUM
+Überwachungskamera,surveillance camera,FEMININE,MEDIUM
+Bewachung,security,FEMININE,MEDIUM
+Wachmann,security guard,MASCULINE,MEDIUM
+Wachfrau,security guard,FEMININE,MEDIUM
+Polizist,police officer,MASCULINE,MEDIUM
+Polizistin,police officer,FEMININE,MEDIUM
+Detektiv,detective,MASCULINE,MEDIUM
+Detektivin,detective,FEMININE,MEDIUM
+Privatdetektiv,private detective,MASCULINE,MEDIUM
+Privatdetektivin,private detective,FEMININE,MEDIUM
+Spion,spy,MASCULINE,MEDIUM
+Spionin,spy,FEMININE,MEDIUM
+Agent,agent,MASCULINE,MEDIUM
+Agentin,agent,FEMININE,MEDIUM
+Geheimagent,secret agent,MASCULINE,MEDIUM
+Geheimagentin,secret agent,FEMININE,MEDIUM
+Diplomat,diplomat,MASCULINE,MEDIUM
+Diplomatin,diplomat,FEMININE,MEDIUM
+Botschafter,ambassador,MASCULINE,MEDIUM
+Botschafterin,ambassador,FEMININE,MEDIUM
+Konsul,consul,MASCULINE,MEDIUM
+Konsulin,consul,FEMININE,MEDIUM
+Attaché,attaché,MASCULINE,MEDIUM
+Attachée,attaché,FEMININE,MEDIUM
+Sekretär,secretary,MASCULINE,MEDIUM
+Sekretärin,secretary,FEMININE,MEDIUM
+Assistent,assistant,MASCULINE,MEDIUM
+Assistentin,assistant,FEMININE,MEDIUM
+Berater,advisor,MASCULINE,MEDIUM
+Beraterin,advisor,FEMININE,MEDIUM
+Manager,manager,MASCULINE,MEDIUM
+Managerin,manager,FEMININE,MEDIUM
+Chef,boss,MASCULINE,MEDIUM
+Chefin,boss,FEMININE,MEDIUM
+Direktor,director,MASCULINE,MEDIUM
+Direktorin,director,FEMININE,MEDIUM
+Geschäftsführer,managing director,MASCULINE,MEDIUM
+Geschäftsführerin,managing director,FEMININE,MEDIUM
+Vorstand,board of directors,MASCULINE,MEDIUM
+Aufsichtsrat,supervisory board,MASCULINE,MEDIUM
+Aktionär,shareholder,MASCULINE,MEDIUM
+Aktionärin,shareholder,FEMININE,MEDIUM
+Investor,investor,MASCULINE,MEDIUM
+Investorin,investor,FEMININE,MEDIUM
+Spekulant,speculator,MASCULINE,MEDIUM
+Spekulantin,speculator,FEMININE,MEDIUM
+Makler,broker,MASCULINE,MEDIUM
+Maklerin,broker,FEMININE,MEDIUM
+Versicherungsvertreter,insurance agent,MASCULINE,MEDIUM
+Versicherungsvertreterin,insurance agent,FEMININE,MEDIUM
+Bankangestellter,bank employee,MASCULINE,MEDIUM
+Bankangestellte,bank employee,FEMININE,MEDIUM
+Kassierer,cashier,MASCULINE,MEDIUM
+Kassiererin,cashier,FEMININE,MEDIUM
+Buchhalter,accountant,MASCULINE,MEDIUM
+Buchhalterin,accountant,FEMININE,MEDIUM
+Steuerberater,tax advisor,MASCULINE,MEDIUM
+Steuerberaterin,tax advisor,FEMININE,MEDIUM
+Wirtschaftsprüfer,auditor,MASCULINE,MEDIUM
+Wirtschaftsprüferin,auditor,FEMININE,MEDIUM
+Rechtsanwalt,lawyer,MASCULINE,MEDIUM
+Rechtsanwältin,lawyer,FEMININE,MEDIUM
+Notar,notary,MASCULINE,MEDIUM
+Notarin,notary,FEMININE,MEDIUM
+Richter,judge,MASCULINE,MEDIUM
+Richterin,judge,FEMININE,MEDIUM
+Staatsanwalt,prosecutor,MASCULINE,MEDIUM
+Staatsanwältin,prosecutor,FEMININE,MEDIUM
+Verteidiger,defense attorney,MASCULINE,MEDIUM
+Verteidigerin,defense attorney,FEMININE,MEDIUM
+Zeuge,witness,MASCULINE,MEDIUM
+Zeugin,witness,FEMININE,MEDIUM
+Geschworener,juror,MASCULINE,MEDIUM
+Geschworene,juror,FEMININE,MEDIUM
+Gefangener,prisoner,MASCULINE,MEDIUM
+Gefangene,prisoner,FEMININE,MEDIUM
+Wärter,warden,MASCULINE,MEDIUM
+Wärterin,warden,FEMININE,MEDIUM
 Geschichte,history,FEMININE,HARD
 Wissenschaft,science,FEMININE,HARD
 Entwicklung,development,FEMININE,HARD
