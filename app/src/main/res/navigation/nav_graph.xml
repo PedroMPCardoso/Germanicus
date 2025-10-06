@@ -24,6 +24,12 @@
         tools:layout="@layout/fragment_translation_game" />
 
     <fragment
+        android:id="@+id/genderLookupFragment"
+        android:name="com.pedrompcardoso.germanicus.ui.GenderLookupFragment"
+        android:label="Gender Lookup"
+        tools:layout="@layout/fragment_gender_lookup" />
+
+    <fragment
         android:id="@+id/gameResultFragment"
         android:name="com.pedrompcardoso.germanicus.ui.GameResultFragment"
         android:label="Game Results"
@@ -46,6 +52,10 @@
     <action
         android:id="@+id/action_mainMenuFragment_to_translationGameFragment"
         app:destination="@id/translationGameFragment" />
+
+    <action
+        android:id="@+id/action_mainMenuFragment_to_genderLookupFragment"
+        app:destination="@id/genderLookupFragment" />
 
     <action
         android:id="@+id/action_genderGameFragment_to_gameResultFragment"
