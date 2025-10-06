@@ -61,6 +61,12 @@ dependencies {
     // CardView
     implementation("androidx.cardview:cardview:1.0.0")
     
+    // HTTP client for API calls
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    
+    // JSON parsing
+    implementation("org.json:json:20231013")
+    
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

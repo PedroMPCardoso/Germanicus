@@ -29,5 +29,9 @@
     <string name="masculine">Masculine (der)</string>
     <string name="feminine">Feminine (die)</string>
     <string name="neuter">Neuter (das)</string>
+    <string name="translate_word">Translate Word</string>
+    <string name="translation_result">Translation: %1$s</string>
+    <string name="translating">Translating...</string>
+    <string name="translation_error">Translation failed. Please check your internet connection.</string>
     <string name="version">Version 1.0</string>
 </resources>

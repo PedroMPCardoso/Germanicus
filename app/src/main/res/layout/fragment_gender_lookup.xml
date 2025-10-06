@@ -144,19 +144,52 @@
                 android:textColor="@color/secondary_text"
                 android:fontFamily="monospace" />
 
+            <TextView
+                android:id="@+id/translationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_color"
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/main_menu"
+        android:orientation="horizontal"
         android:layout_marginBottom="32dp"
-        app:backgroundTint="@color/secondary_color"
-        android:textColor="@android:color/white"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/main_menu"
+            android:layout_marginEnd="8dp"
+            app:backgroundTint="@color/secondary_color"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/translateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/translate_word"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"
+            app:backgroundTint="@color/primary_color"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

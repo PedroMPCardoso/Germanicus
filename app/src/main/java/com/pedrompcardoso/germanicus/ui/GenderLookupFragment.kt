@@ -12,7 +12,12 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.pedrompcardoso.germanicus.R
 import com.pedrompcardoso.germanicus.data.GermanNouns
+import com.pedrompcardoso.germanicus.data.TranslationService
 import com.pedrompcardoso.germanicus.databinding.FragmentGenderLookupBinding
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class GenderLookupFragment : Fragment() {
     
@@ -20,6 +25,8 @@ class GenderLookupFragment : Fragment() {
     private val binding get() = _binding!!
     
     private lateinit var germanNouns: GermanNouns
+    private lateinit var translationService: TranslationService
+    private var currentWord: String = ""
     
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,6 +41,7 @@ class GenderLookupFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         
         germanNouns = GermanNouns(requireContext())
+        translationService = TranslationService()
         setupClickListeners()
         setupTextWatcher()
     }
@@ -45,6 +53,10 @@ class GenderLookupFragment : Fragment() {
         
         binding.backButton.setOnClickListener {
             findNavController().navigateUp()
+        }
+        
+        binding.translateButton.setOnClickListener {
+            translateCurrentWord()
         }
         
         // Allow lookup on "Done" key press
@@ -63,8 +75,10 @@ class GenderLookupFragment : Fragment() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
             override fun afterTextChanged(s: Editable?) {
-                // Hide result card when text changes
+                // Hide result card and translation when text changes
                 binding.resultCard.visibility = View.GONE
+                binding.translateButton.visibility = View.GONE
+                binding.translationTextView.visibility = View.GONE
             }
         })
     }
@@ -84,6 +98,7 @@ class GenderLookupFragment : Fragment() {
             if (it.isLowerCase()) it.titlecase() else it.toString() 
         }
         
+        currentWord = lookupWord
         val words = germanNouns[lookupWord]
         
         if (words.isEmpty()) {
@@ -100,6 +115,8 @@ class GenderLookupFragment : Fragment() {
         binding.genderTextView.text = getString(R.string.word_not_found)
         binding.genderTextView.setTextColor(ContextCompat.getColor(requireContext(), R.color.error_color))
         binding.declensionTextView.visibility = View.GONE
+        binding.translateButton.visibility = View.VISIBLE // Show translate button even for not found words
+        binding.translationTextView.visibility = View.GONE
     }
     
     private fun showGenderResult(noun: com.pedrompcardoso.germanicus.data.GermanNoun, word: String) {
@@ -140,6 +157,45 @@ class GenderLookupFragment : Fragment() {
         
         binding.declensionTextView.text = declensionText
         binding.declensionTextView.visibility = View.VISIBLE
+        binding.translateButton.visibility = View.VISIBLE // Show translate button for found words
+        binding.translationTextView.visibility = View.GONE
+    }
+    
+    private fun translateCurrentWord() {
+        if (currentWord.isEmpty()) return
+        
+        // Show loading state
+        binding.translateButton.text = getString(R.string.translating)
+        binding.translateButton.isEnabled = false
+        
+        // Hide previous translation
+        binding.translationTextView.visibility = View.GONE
+        
+        // Perform translation in background
+        CoroutineScope(Dispatchers.Main).launch {
+            try {
+                val translation = withContext(Dispatchers.IO) {
+                    translationService.translateGermanToEnglish(currentWord)
+                }
+                
+                if (translation != null) {
+                    binding.translationTextView.text = getString(R.string.translation_result, translation)
+                    binding.translationTextView.visibility = View.VISIBLE
+                } else {
+                    binding.translationTextView.text = getString(R.string.translation_error)
+                    binding.translationTextView.setTextColor(ContextCompat.getColor(requireContext(), R.color.error_color))
+                    binding.translationTextView.visibility = View.VISIBLE
+                }
+            } catch (e: Exception) {
+                binding.translationTextView.text = getString(R.string.translation_error)
+                binding.translationTextView.setTextColor(ContextCompat.getColor(requireContext(), R.color.error_color))
+                binding.translationTextView.visibility = View.VISIBLE
+            } finally {
+                // Reset button state
+                binding.translateButton.text = getString(R.string.translate_word)
+                binding.translateButton.isEnabled = true
+            }
+        }
     }
     
     override fun onDestroyView() {
