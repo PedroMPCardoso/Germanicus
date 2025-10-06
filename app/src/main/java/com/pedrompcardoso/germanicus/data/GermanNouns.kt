@@ -77,20 +77,21 @@ class GermanNouns(private val context: Context) {
         val pos = parts[1].split(",").map { it.trim() }
         val genus = parts[2].trim()
         
-        // Extract declension forms (indices based on the CSV structure)
+        // Extract declension forms (corrected indices based on actual CSV structure)
+        // Based on the Fahrrad example: indices 7, 16, 25, 34, 43, 52, 61, 70 are correct
         val nominativSingular = parts[7].trim()
-        val nominativPlural = parts[15].trim()
+        val nominativPlural = parts[16].trim()
         val genitivSingular = parts[25].trim()
-        val genitivPlural = parts[33].trim()
-        val dativSingular = parts[41].trim()
-        val dativPlural = parts[49].trim()
-        val akkusativSingular = parts[57].trim()
-        val akkusativPlural = parts[65].trim()
+        val genitivPlural = parts[34].trim()
+        val dativSingular = parts[43].trim()
+        val dativPlural = parts[52].trim()
+        val akkusativSingular = parts[61].trim()
+        val akkusativPlural = parts[70].trim()
         
-        // Alternative forms (marked with *)
+        // Alternative forms (marked with *) - these are the next columns after the main forms
         val nominativSingularAlt = parts[8].trim().takeIf { it.isNotEmpty() }
         val genitivSingularAlt = parts[26].trim().takeIf { it.isNotEmpty() }
-        val dativSingularAlt = parts[42].trim().takeIf { it.isNotEmpty() }
+        val dativSingularAlt = parts[44].trim().takeIf { it.isNotEmpty() }
         
         // Skip entries with empty lemma or essential forms
         if (lemma.isEmpty() || nominativSingular.isEmpty() || genus.isEmpty()) {
