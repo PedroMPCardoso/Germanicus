@@ -10,7 +10,8 @@ data class GermanWord(
 enum class Gender(val article: String, val displayName: String) {
     MASCULINE("der", "Masculine"),
     FEMININE("die", "Feminine"),
-    NEUTER("das", "Neuter")
+    NEUTER("das", "Neuter"),
+    PLURAL("die", "Plural")
 }
 
 enum class Difficulty {
