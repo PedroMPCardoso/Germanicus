@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.inputmethod.EditorInfo
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -55,11 +54,20 @@ class TranslationGameFragment : Fragment() {
         viewModel.remainingLives.observe(viewLifecycleOwner) { remainingLives ->
             binding.livesTextView.text = getString(R.string.lives, remainingLives, GameViewModel.MAX_TRANSLATION_LIVES)
         }
+
+        viewModel.translationOptions.observe(viewLifecycleOwner) { options ->
+            val optionButtons = listOf(binding.optionOneButton, binding.optionTwoButton, binding.optionThreeButton)
+            optionButtons.forEachIndexed { index, button ->
+                val option = options.getOrNull(index)
+                button.text = option.orEmpty()
+                button.isEnabled = option != null
+                button.visibility = if (option != null) View.VISIBLE else View.GONE
+            }
+        }
         
         viewModel.showResult.observe(viewLifecycleOwner) { show ->
             binding.resultCard.visibility = if (show) View.VISIBLE else View.GONE
-            binding.answerInputLayout.visibility = if (show) View.GONE else View.VISIBLE
-            binding.submitButton.visibility = if (show) View.GONE else View.VISIBLE
+            binding.optionsLayout.visibility = if (show) View.GONE else View.VISIBLE
         }
         
         viewModel.isCorrect.observe(viewLifecycleOwner) { isCorrect ->
@@ -96,29 +104,15 @@ class TranslationGameFragment : Fragment() {
     }
     
     private fun setupClickListeners() {
-        binding.submitButton.setOnClickListener {
-            submitAnswer()
-        }
-        
-        binding.answerEditText.setOnEditorActionListener { _, actionId, _ ->
-            if (actionId == EditorInfo.IME_ACTION_DONE) {
-                submitAnswer()
-                true
-            } else {
-                false
+        val optionButtons = listOf(binding.optionOneButton, binding.optionTwoButton, binding.optionThreeButton)
+        optionButtons.forEach { button ->
+            button.setOnClickListener {
+                viewModel.checkTranslationAnswer(button.text.toString())
             }
         }
         
         binding.nextButton.setOnClickListener {
             viewModel.nextQuestion()
-            binding.answerEditText.text?.clear()
-        }
-    }
-    
-    private fun submitAnswer() {
-        val answer = binding.answerEditText.text?.toString() ?: ""
-        if (answer.isNotBlank()) {
-            viewModel.checkTranslationAnswer(answer)
         }
     }
     

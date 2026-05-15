@@ -27,6 +27,9 @@ class GameViewModel : ViewModel() {
 
     private val _remainingLives = MutableLiveData(MAX_TRANSLATION_LIVES)
     val remainingLives: LiveData<Int> = _remainingLives
+
+    private val _translationOptions = MutableLiveData<List<String>>()
+    val translationOptions: LiveData<List<String>> = _translationOptions
     
     private val _gameMode = MutableLiveData<GameMode>()
     val gameMode: LiveData<GameMode> = _gameMode
@@ -62,7 +65,7 @@ class GameViewModel : ViewModel() {
         currentWordIndex = 0
         
         if (wordsForGame.isNotEmpty()) {
-            _currentWord.value = wordsForGame[0]
+            setCurrentWord(wordsForGame[0])
         } else {
             _isGameActive.value = false
         }
@@ -109,13 +112,13 @@ class GameViewModel : ViewModel() {
         currentWordIndex++
         
         if (currentWordIndex < wordsForGame.size) {
-            _currentWord.value = wordsForGame[currentWordIndex]
+            setCurrentWord(wordsForGame[currentWordIndex])
         } else if (_gameMode.value == GameMode.TRANSLATION) {
             wordsForGame = getNextTranslationBlock()
             currentWordIndex = 0
 
             if (wordsForGame.isNotEmpty()) {
-                _currentWord.value = wordsForGame[0]
+                setCurrentWord(wordsForGame[0])
             } else {
                 _isGameActive.value = false
             }
@@ -175,5 +178,13 @@ class GameViewModel : ViewModel() {
             addAll(WordRepository.getRandomWordsByDifficulty(Difficulty.MEDIUM, mediumCount))
             addAll(WordRepository.getRandomWordsByDifficulty(Difficulty.HARD, hardCount))
         }.shuffled()
+    }
+
+    private fun setCurrentWord(word: GermanWord) {
+        _currentWord.value = word
+
+        if (_gameMode.value == GameMode.TRANSLATION) {
+            _translationOptions.value = WordRepository.getTranslationOptions(word.english)
+        }
     }
 } 

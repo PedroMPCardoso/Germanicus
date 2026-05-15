@@ -44,6 +44,22 @@ object WordRepository {
             List(count) { matchingWords.random() }
         }
     }
+
+    fun getTranslationOptions(correctTranslation: String, optionCount: Int = 3): List<String> {
+        if (!isInitialized) {
+            throw IllegalStateException("WordRepository not initialized. Call initialize() first.")
+        }
+
+        val normalizedCorrect = correctTranslation.trim().lowercase()
+        val wrongOptions = germanWords
+            .map { it.english.trim() }
+            .filter { it.isNotEmpty() && it.lowercase() != normalizedCorrect }
+            .distinctBy { it.lowercase() }
+            .shuffled()
+            .take((optionCount - 1).coerceAtLeast(0))
+
+        return (wrongOptions + correctTranslation).shuffled()
+    }
     
     fun getRandomWords(count: Int): List<GermanWord> {
         if (!isInitialized) {
