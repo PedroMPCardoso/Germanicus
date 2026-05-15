@@ -34,6 +34,23 @@ object WordRepository {
         }
 
         val matchingWords = germanWords.filter { it.difficulty == difficulty }
+        return getRandomFromWords(matchingWords, count)
+    }
+
+    fun getRandomWordsByDifficulty(
+        difficulty: Difficulty,
+        count: Int,
+        excludedGenders: Set<Gender>
+    ): List<GermanWord> {
+        if (!isInitialized) {
+            throw IllegalStateException("WordRepository not initialized. Call initialize() first.")
+        }
+
+        val matchingWords = germanWords.filter { it.difficulty == difficulty && it.gender !in excludedGenders }
+        return getRandomFromWords(matchingWords, count)
+    }
+
+    private fun getRandomFromWords(matchingWords: List<GermanWord>, count: Int): List<GermanWord> {
         if (matchingWords.isEmpty() || count <= 0) {
             return emptyList()
         }

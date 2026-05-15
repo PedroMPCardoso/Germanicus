@@ -13,6 +13,9 @@
     <string name="lives">Lives: %1$d/%2$d</string>
     <string name="lives_default">♥♥♥♥♥</string>
     <string name="heart_added_banner">+1 ♥  Five correct in a row</string>
+    <string name="help_symbol">?</string>
+    <string name="gender_help_title">Gender Tips</string>
+    <string name="gender_help_tips">Masculine (der): many days, months, seasons, weather words, and nouns ending in -er, -ling, -or, or -ismus.\n\nFeminine (die): many nouns ending in -ung, -heit, -keit, -schaft, -ion, -ei, -in, or -e.\n\nNeuter (das): many nouns ending in -chen, -lein, -ment, -um, or -nis, and most infinitives used as nouns.\n\nCompound nouns take the gender of the last word: Haustür follows Tür, so it is die Haustür.</string>
     <string name="correct">Correct!</string>
     <string name="incorrect">Incorrect!</string>
     <string name="correct_answer">Correct answer: %1$s</string>

@@ -12,6 +12,7 @@ import com.pedrompcardoso.germanicus.data.Gender
 import com.pedrompcardoso.germanicus.game.GameMode
 import com.pedrompcardoso.germanicus.game.GameViewModel
 import com.pedrompcardoso.germanicus.databinding.FragmentGenderGameBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class GenderGameFragment : Fragment() {
     
@@ -19,6 +20,8 @@ class GenderGameFragment : Fragment() {
     private val binding get() = _binding!!
     
     private val viewModel: GameViewModel by activityViewModels()
+    private var seenHeartRewardEvents = 0
+    private var heartRewardAnimation: Runnable? = null
     
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -38,6 +41,8 @@ class GenderGameFragment : Fragment() {
     }
     
     private fun setupObservers() {
+        seenHeartRewardEvents = viewModel.heartRewardEvents.value ?: 0
+
         viewModel.currentWord.observe(viewLifecycleOwner) { word ->
             binding.germanWordTextView.text = word.german
         }
@@ -45,6 +50,22 @@ class GenderGameFragment : Fragment() {
         viewModel.score.observe(viewLifecycleOwner) { score ->
             val total = viewModel.totalQuestions.value ?: 0
             binding.scoreTextView.text = getString(R.string.score, score, total)
+        }
+
+        viewModel.totalQuestions.observe(viewLifecycleOwner) { total ->
+            val score = viewModel.score.value ?: 0
+            binding.scoreTextView.text = getString(R.string.score, score, total)
+        }
+
+        viewModel.remainingLives.observe(viewLifecycleOwner) { remainingLives ->
+            binding.livesTextView.text = buildHeartsText(remainingLives)
+        }
+
+        viewModel.heartRewardEvents.observe(viewLifecycleOwner) { rewardEvents ->
+            if (rewardEvents > seenHeartRewardEvents) {
+                seenHeartRewardEvents = rewardEvents
+                showHeartRewardAnimation()
+            }
         }
         
         viewModel.showResult.observe(viewLifecycleOwner) { show ->
@@ -63,6 +84,11 @@ class GenderGameFragment : Fragment() {
                     else requireContext().getColor(android.R.color.holo_red_dark)
                 )
                 binding.correctAnswerTextView.text = getString(R.string.correct_answer, correctAnswer)
+                binding.nextButton.text = if (viewModel.hasNoLives()) {
+                    getString(R.string.view_results)
+                } else {
+                    getString(R.string.next)
+                }
             }
         }
         
@@ -96,10 +122,61 @@ class GenderGameFragment : Fragment() {
         binding.nextButton.setOnClickListener {
             viewModel.nextQuestion()
         }
+
+        binding.helpButton.setOnClickListener {
+            showGenderHelpDialog()
+        }
+    }
+
+    private fun buildHeartsText(remainingLives: Int): String {
+        val filledHearts = "♥".repeat(remainingLives.coerceIn(0, GameViewModel.MAX_LIVES))
+        val emptyHearts = "♡".repeat((GameViewModel.MAX_LIVES - remainingLives).coerceAtLeast(0))
+        return filledHearts + emptyHearts
+    }
+
+    private fun showHeartRewardAnimation() {
+        heartRewardAnimation?.let { binding.heartRewardCard.removeCallbacks(it) }
+
+        binding.heartRewardCard.apply {
+            alpha = 0f
+            translationY = -24f
+            scaleX = 0.92f
+            scaleY = 0.92f
+            visibility = View.VISIBLE
+            animate()
+                .alpha(1f)
+                .translationY(0f)
+                .scaleX(1f)
+                .scaleY(1f)
+                .setDuration(220L)
+                .start()
+        }
+
+        heartRewardAnimation = Runnable {
+            binding.heartRewardCard.animate()
+                .alpha(0f)
+                .translationY(-24f)
+                .setDuration(260L)
+                .withEndAction {
+                    binding.heartRewardCard.visibility = View.GONE
+                }
+                .start()
+        }
+
+        binding.heartRewardCard.postDelayed(heartRewardAnimation, 1400L)
+    }
+
+    private fun showGenderHelpDialog() {
+        MaterialAlertDialogBuilder(requireContext())
+            .setTitle(getString(R.string.gender_help_title))
+            .setMessage(getString(R.string.gender_help_tips))
+            .setPositiveButton(android.R.string.ok, null)
+            .show()
     }
     
     override fun onDestroyView() {
         super.onDestroyView()
+        heartRewardAnimation?.let { binding.heartRewardCard.removeCallbacks(it) }
         _binding = null
     }
 } 

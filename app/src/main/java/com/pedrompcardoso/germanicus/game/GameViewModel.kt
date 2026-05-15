@@ -10,8 +10,9 @@ import com.pedrompcardoso.germanicus.data.WordRepository
 
 class GameViewModel : ViewModel() {
     companion object {
-        const val MAX_TRANSLATION_LIVES = 5
-        private const val TRANSLATION_BLOCK_SIZE = 10
+        const val MAX_LIVES = 5
+        const val MAX_TRANSLATION_LIVES = MAX_LIVES
+        private const val PROGRESSIVE_BLOCK_SIZE = 10
         private const val DIFFICULTY_STEP_SIZE = 2
         private const val MEDIUM_ONLY_BLOCK_INDEX = 5
     }
@@ -25,7 +26,7 @@ class GameViewModel : ViewModel() {
     private val _totalQuestions = MutableLiveData(0)
     val totalQuestions: LiveData<Int> = _totalQuestions
 
-    private val _remainingLives = MutableLiveData(MAX_TRANSLATION_LIVES)
+    private val _remainingLives = MutableLiveData(MAX_LIVES)
     val remainingLives: LiveData<Int> = _remainingLives
 
     private val _translationOptions = MutableLiveData<List<String>>()
@@ -48,8 +49,8 @@ class GameViewModel : ViewModel() {
     
     private var currentWordIndex = 0
     private var wordsForGame = listOf<GermanWord>()
-    private var translationBlockIndex = 0
-    private var consecutiveCorrectTranslationAnswers = 0
+    private var progressiveBlockIndex = 0
+    private var consecutiveCorrectAnswers = 0
     
     fun startGame(mode: GameMode, wordCount: Int = 10) {
         _gameMode.value = mode
@@ -58,16 +59,12 @@ class GameViewModel : ViewModel() {
         _isGameActive.value = true
         _showResult.value = false
         _isCorrect.value = null
-        _remainingLives.value = MAX_TRANSLATION_LIVES
+        _remainingLives.value = MAX_LIVES
         _heartRewardEvents.value = 0
-        translationBlockIndex = 0
-        consecutiveCorrectTranslationAnswers = 0
+        progressiveBlockIndex = 0
+        consecutiveCorrectAnswers = 0
 
-        wordsForGame = if (mode == GameMode.TRANSLATION) {
-            getNextTranslationBlock()
-        } else {
-            WordRepository.getRandomWords(wordCount)
-        }
+        wordsForGame = getNextProgressiveBlock(mode)
         currentWordIndex = 0
         
         if (wordsForGame.isNotEmpty()) {
@@ -80,15 +77,24 @@ class GameViewModel : ViewModel() {
     fun checkGenderAnswer(selectedGender: Gender) {
         val word = _currentWord.value ?: return
         val correct = word.gender == selectedGender
-        
-        _isCorrect.value = correct
-        _showResult.value = true
-        
+
         if (correct) {
             _score.value = (_score.value ?: 0) + 1
+            consecutiveCorrectAnswers++
+            maybeRestoreLife()
+        } else {
+            consecutiveCorrectAnswers = 0
+            _remainingLives.value = ((_remainingLives.value ?: MAX_LIVES) - 1).coerceAtLeast(0)
         }
         
         _totalQuestions.value = (_totalQuestions.value ?: 0) + 1
+
+        if (correct) {
+            nextQuestion()
+        } else {
+            _isCorrect.value = false
+            _showResult.value = true
+        }
     }
     
     fun checkTranslationAnswer(userAnswer: String) {
@@ -97,11 +103,11 @@ class GameViewModel : ViewModel() {
 
         if (correct) {
             _score.value = (_score.value ?: 0) + 1
-            consecutiveCorrectTranslationAnswers++
-            maybeRestoreTranslationLife()
+            consecutiveCorrectAnswers++
+            maybeRestoreLife()
         } else {
-            consecutiveCorrectTranslationAnswers = 0
-            _remainingLives.value = ((_remainingLives.value ?: MAX_TRANSLATION_LIVES) - 1).coerceAtLeast(0)
+            consecutiveCorrectAnswers = 0
+            _remainingLives.value = ((_remainingLives.value ?: MAX_LIVES) - 1).coerceAtLeast(0)
         }
         
         _totalQuestions.value = (_totalQuestions.value ?: 0) + 1
@@ -115,7 +121,7 @@ class GameViewModel : ViewModel() {
     }
     
     fun nextQuestion() {
-        if (_gameMode.value == GameMode.TRANSLATION && (_remainingLives.value ?: 0) <= 0) {
+        if ((_remainingLives.value ?: 0) <= 0) {
             _isGameActive.value = false
             return
         }
@@ -127,8 +133,14 @@ class GameViewModel : ViewModel() {
         
         if (currentWordIndex < wordsForGame.size) {
             setCurrentWord(wordsForGame[currentWordIndex])
-        } else if (_gameMode.value == GameMode.TRANSLATION) {
-            wordsForGame = getNextTranslationBlock()
+        } else {
+            val mode = _gameMode.value
+            if (mode == null) {
+                _isGameActive.value = false
+                return
+            }
+
+            wordsForGame = getNextProgressiveBlock(mode)
             currentWordIndex = 0
 
             if (wordsForGame.isNotEmpty()) {
@@ -136,13 +148,15 @@ class GameViewModel : ViewModel() {
             } else {
                 _isGameActive.value = false
             }
-        } else {
-            _isGameActive.value = false
         }
     }
 
     fun hasNoTranslationLives(): Boolean {
-        return _gameMode.value == GameMode.TRANSLATION && (_remainingLives.value ?: 0) <= 0
+        return _gameMode.value == GameMode.TRANSLATION && hasNoLives()
+    }
+
+    fun hasNoLives(): Boolean {
+        return (_remainingLives.value ?: 0) <= 0
     }
     
     fun getCorrectAnswer(): String {
@@ -169,29 +183,42 @@ class GameViewModel : ViewModel() {
         }
     }
 
-    private fun getNextTranslationBlock(): List<GermanWord> {
+    private fun getNextProgressiveBlock(mode: GameMode): List<GermanWord> {
         val mediumCount: Int
         val easyCount: Int
         val hardCount: Int
 
-        if (translationBlockIndex <= MEDIUM_ONLY_BLOCK_INDEX) {
-            mediumCount = (translationBlockIndex * DIFFICULTY_STEP_SIZE).coerceAtMost(TRANSLATION_BLOCK_SIZE)
-            easyCount = TRANSLATION_BLOCK_SIZE - mediumCount
+        if (progressiveBlockIndex <= MEDIUM_ONLY_BLOCK_INDEX) {
+            mediumCount = (progressiveBlockIndex * DIFFICULTY_STEP_SIZE).coerceAtMost(PROGRESSIVE_BLOCK_SIZE)
+            easyCount = PROGRESSIVE_BLOCK_SIZE - mediumCount
             hardCount = 0
         } else {
-            hardCount = ((translationBlockIndex - MEDIUM_ONLY_BLOCK_INDEX) * DIFFICULTY_STEP_SIZE)
-                .coerceAtMost(TRANSLATION_BLOCK_SIZE)
-            mediumCount = TRANSLATION_BLOCK_SIZE - hardCount
+            hardCount = ((progressiveBlockIndex - MEDIUM_ONLY_BLOCK_INDEX) * DIFFICULTY_STEP_SIZE)
+                .coerceAtMost(PROGRESSIVE_BLOCK_SIZE)
+            mediumCount = PROGRESSIVE_BLOCK_SIZE - hardCount
             easyCount = 0
         }
 
-        translationBlockIndex++
+        progressiveBlockIndex++
+        val excludedGenders = if (mode == GameMode.GENDER_GUESSING) setOf(Gender.PLURAL) else emptySet()
 
         return buildList {
-            addAll(WordRepository.getRandomWordsByDifficulty(Difficulty.EASY, easyCount))
-            addAll(WordRepository.getRandomWordsByDifficulty(Difficulty.MEDIUM, mediumCount))
-            addAll(WordRepository.getRandomWordsByDifficulty(Difficulty.HARD, hardCount))
+            addAll(getRandomWordsByDifficulty(Difficulty.EASY, easyCount, excludedGenders))
+            addAll(getRandomWordsByDifficulty(Difficulty.MEDIUM, mediumCount, excludedGenders))
+            addAll(getRandomWordsByDifficulty(Difficulty.HARD, hardCount, excludedGenders))
         }.shuffled()
+    }
+
+    private fun getRandomWordsByDifficulty(
+        difficulty: Difficulty,
+        count: Int,
+        excludedGenders: Set<Gender>
+    ): List<GermanWord> {
+        return if (excludedGenders.isEmpty()) {
+            WordRepository.getRandomWordsByDifficulty(difficulty, count)
+        } else {
+            WordRepository.getRandomWordsByDifficulty(difficulty, count, excludedGenders)
+        }
     }
 
     private fun setCurrentWord(word: GermanWord) {
@@ -202,11 +229,11 @@ class GameViewModel : ViewModel() {
         }
     }
 
-    private fun maybeRestoreTranslationLife() {
-        val currentLives = _remainingLives.value ?: MAX_TRANSLATION_LIVES
-        if (consecutiveCorrectTranslationAnswers >= 5 && currentLives < MAX_TRANSLATION_LIVES) {
+    private fun maybeRestoreLife() {
+        val currentLives = _remainingLives.value ?: MAX_LIVES
+        if (consecutiveCorrectAnswers >= 5 && currentLives < MAX_LIVES) {
             _remainingLives.value = currentLives + 1
-            consecutiveCorrectTranslationAnswers = 0
+            consecutiveCorrectAnswers = 0
             _heartRewardEvents.value = (_heartRewardEvents.value ?: 0) + 1
         }
     }
