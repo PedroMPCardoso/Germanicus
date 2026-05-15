@@ -11,7 +11,6 @@ import com.pedrompcardoso.germanicus.R
 import com.pedrompcardoso.germanicus.game.GameMode
 import com.pedrompcardoso.germanicus.game.GameViewModel
 import com.pedrompcardoso.germanicus.databinding.FragmentTranslationGameBinding
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class TranslationGameFragment : Fragment() {
     
@@ -20,6 +19,7 @@ class TranslationGameFragment : Fragment() {
     
     private val viewModel: GameViewModel by activityViewModels()
     private var seenHeartRewardEvents = 0
+    private var heartRewardAnimation: Runnable? = null
     
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -62,7 +62,7 @@ class TranslationGameFragment : Fragment() {
         viewModel.heartRewardEvents.observe(viewLifecycleOwner) { rewardEvents ->
             if (rewardEvents > seenHeartRewardEvents) {
                 seenHeartRewardEvents = rewardEvents
-                showHeartRewardDialog()
+                showHeartRewardAnimation()
             }
         }
 
@@ -133,16 +133,41 @@ class TranslationGameFragment : Fragment() {
         return filledHearts + emptyHearts
     }
 
-    private fun showHeartRewardDialog() {
-        MaterialAlertDialogBuilder(requireContext())
-            .setTitle(getString(R.string.heart_added_title))
-            .setMessage(getString(R.string.heart_added_message))
-            .setPositiveButton(android.R.string.ok, null)
-            .show()
+    private fun showHeartRewardAnimation() {
+        heartRewardAnimation?.let { binding.heartRewardCard.removeCallbacks(it) }
+
+        binding.heartRewardCard.apply {
+            alpha = 0f
+            translationY = -24f
+            scaleX = 0.92f
+            scaleY = 0.92f
+            visibility = View.VISIBLE
+            animate()
+                .alpha(1f)
+                .translationY(0f)
+                .scaleX(1f)
+                .scaleY(1f)
+                .setDuration(220L)
+                .start()
+        }
+
+        heartRewardAnimation = Runnable {
+            binding.heartRewardCard.animate()
+                .alpha(0f)
+                .translationY(-24f)
+                .setDuration(260L)
+                .withEndAction {
+                    binding.heartRewardCard.visibility = View.GONE
+                }
+                .start()
+        }
+
+        binding.heartRewardCard.postDelayed(heartRewardAnimation, 1400L)
     }
     
     override fun onDestroyView() {
         super.onDestroyView()
+        heartRewardAnimation?.let { binding.heartRewardCard.removeCallbacks(it) }
         _binding = null
     }
-} 
+}
