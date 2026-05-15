@@ -96,8 +96,13 @@ class GameViewModel : ViewModel() {
         }
         
         _totalQuestions.value = (_totalQuestions.value ?: 0) + 1
-        _isCorrect.value = correct
-        _showResult.value = true
+
+        if (correct) {
+            nextQuestion()
+        } else {
+            _isCorrect.value = false
+            _showResult.value = true
+        }
     }
     
     fun nextQuestion() {
