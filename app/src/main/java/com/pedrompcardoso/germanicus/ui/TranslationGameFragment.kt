@@ -46,6 +46,15 @@ class TranslationGameFragment : Fragment() {
             val total = viewModel.totalQuestions.value ?: 0
             binding.scoreTextView.text = getString(R.string.score, score, total)
         }
+
+        viewModel.totalQuestions.observe(viewLifecycleOwner) { total ->
+            val score = viewModel.score.value ?: 0
+            binding.scoreTextView.text = getString(R.string.score, score, total)
+        }
+
+        viewModel.remainingLives.observe(viewLifecycleOwner) { remainingLives ->
+            binding.livesTextView.text = getString(R.string.lives, remainingLives, GameViewModel.MAX_TRANSLATION_LIVES)
+        }
         
         viewModel.showResult.observe(viewLifecycleOwner) { show ->
             binding.resultCard.visibility = if (show) View.VISIBLE else View.GONE
@@ -64,6 +73,11 @@ class TranslationGameFragment : Fragment() {
                     else requireContext().getColor(android.R.color.holo_red_dark)
                 )
                 binding.correctAnswerTextView.text = getString(R.string.correct_answer, correctAnswer)
+                binding.nextButton.text = if (viewModel.hasNoTranslationLives()) {
+                    getString(R.string.view_results)
+                } else {
+                    getString(R.string.next)
+                }
             }
         }
         

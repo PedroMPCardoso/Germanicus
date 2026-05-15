@@ -73,112 +73,189 @@ Maler,painter,MASCULINE,EASY,professions
 Malerin,painter,FEMININE,EASY,professions
 Musiker,musician,MASCULINE,EASY,music
 Musikerin,musician,FEMININE,EASY,music
-Schriftsteller,writer,MASCULINE,EASY,professions
-Schriftstellerin,writer,FEMININE,EASY,professions
-Künstler,artist,MASCULINE,EASY,professions
-Künstlerin,artist,FEMININE,EASY,professions
-Ingenieur,engineer,MASCULINE,EASY,professions
-Ingenieurin,engineer,FEMININE,EASY,professions
-Programmierer,programmer,MASCULINE,EASY,professions
-Programmiererin,programmer,FEMININE,EASY,professions
-Verkäufer,salesperson,MASCULINE,EASY,professions
-Verkäuferin,salesperson,FEMININE,EASY,professions
-Kassierer,cashier,MASCULINE,EASY,professions
-Kassiererin,cashier,FEMININE,EASY,professions
-Buchhalter,accountant,MASCULINE,EASY,professions
-Buchhalterin,accountant,FEMININE,EASY,professions
-Anwalt,lawyer,MASCULINE,EASY,professions
-Anwältin,lawyer,FEMININE,EASY,professions
-Richter,judge,MASCULINE,EASY,professions
-Richterin,judge,FEMININE,EASY,professions
-Polizist,police officer,MASCULINE,EASY,professions
-Polizistin,police officer,FEMININE,EASY,professions
-Feuerwehrmann,firefighter,MASCULINE,EASY,professions
-Feuerwehrfrau,firefighter,FEMININE,EASY,professions
-Soldat,soldier,MASCULINE,EASY,professions
-Soldatin,soldier,FEMININE,EASY,professions
-Pilot,pilot,MASCULINE,EASY,professions
-Pilotin,pilot,FEMININE,EASY,professions
-Kapitän,captain,MASCULINE,EASY,professions
-Kapitänin,captain,FEMININE,EASY,professions
-Kellner,waiter,MASCULINE,EASY,professions
-Kellnerin,waitress,FEMININE,EASY,professions
-Koch,chef,MASCULINE,EASY,professions
-Köchin,chef,FEMININE,EASY,professions
-Fotograf,photographer,MASCULINE,EASY,professions
-Fotografin,photographer,FEMININE,EASY,professions
-Journalist,journalist,MASCULINE,EASY,professions
-Journalistin,journalist,FEMININE,EASY,professions
-Reporter,reporter,MASCULINE,EASY,professions
-Reporterin,reporter,FEMININE,EASY,professions
-Schauspieler,actor,MASCULINE,EASY,professions
-Schauspielerin,actress,FEMININE,EASY,professions
-Regisseur,director,MASCULINE,EASY,professions
-Regisseurin,director,FEMININE,EASY,professions
-Produzent,producer,MASCULINE,EASY,professions
-Produzentin,producer,FEMININE,EASY,professions
-Kameramann,cameraman,MASCULINE,EASY,professions
-Kamerafrau,camerawoman,FEMININE,EASY,professions
-Tontechniker,sound engineer,MASCULINE,EASY,professions
-Tontechnikerin,sound engineer,FEMININE,EASY,professions
-Beleuchter,lighting technician,MASCULINE,EASY,professions
-Beleuchterin,lighting technician,FEMININE,EASY,professions
-Maskenbildner,makeup artist,MASCULINE,EASY,professions
-Maskenbildnerin,makeup artist,FEMININE,EASY,professions
-Kostümbildner,costume designer,MASCULINE,EASY,professions
-Kostümbildnerin,costume designer,FEMININE,EASY,professions
-Bühnenbildner,set designer,MASCULINE,EASY,professions
-Bühnenbildnerin,set designer,FEMININE,EASY,professions
-Choreograf,choreographer,MASCULINE,EASY,professions
-Choreografin,choreographer,FEMININE,EASY,professions
-Tänzer,dancer,MASCULINE,EASY,music
-Tänzerin,dancer,FEMININE,EASY,music
-Sänger,singer,MASCULINE,EASY,music
-Sängerin,singer,FEMININE,EASY,music
-Gitarrist,guitarist,MASCULINE,EASY,music
-Gitarristin,guitarist,FEMININE,EASY,music
-Pianist,pianist,MASCULINE,EASY,music
-Pianistin,pianist,FEMININE,EASY,music
-Drummer,drummer,MASCULINE,EASY,music
-Drummerin,drummer,FEMININE,EASY,music
-Bassist,bassist,MASCULINE,EASY,music
-Bassistin,bassist,FEMININE,EASY,music
-Saxophonist,saxophonist,MASCULINE,EASY,music
-Saxophonistin,saxophonist,FEMININE,EASY,music
-Trompeter,trumpeter,MASCULINE,EASY,music
-Trompeterin,trumpeter,FEMININE,EASY,music
-Flötist,flutist,MASCULINE,EASY,music
-Flötistin,flutist,FEMININE,EASY,music
-Klarinettist,clarinetist,MASCULINE,EASY,music
-Klarinettistin,clarinetist,FEMININE,EASY,music
-Oboist,oboist,MASCULINE,EASY,music
-Oboistin,oboist,FEMININE,EASY,music
-Fagottist,bassoonist,MASCULINE,EASY,music
-Fagottistin,bassoonist,FEMININE,EASY,music
-Hornist,hornist,MASCULINE,EASY,music
-Hornistin,hornist,FEMININE,EASY,music
-Posaunist,trombonist,MASCULINE,EASY,music
-Posaunistin,trombonist,FEMININE,EASY,music
-Tubist,tubist,MASCULINE,EASY,music
-Tubistin,tubist,FEMININE,EASY,music
-Paukist,timpanist,MASCULINE,EASY,music
-Paukistin,timpanist,FEMININE,EASY,music
-Schlagzeuger,percussionist,MASCULINE,EASY,music
-Schlagzeugerin,percussionist,FEMININE,EASY,music
-Harpist,harpist,MASCULINE,EASY,music
-Harpistin,harpist,FEMININE,EASY,music
-Organist,organist,MASCULINE,EASY,music
-Organistin,organist,FEMININE,EASY,music
-Cembalist,harpsichordist,MASCULINE,EASY,music
-Cembalistin,harpsichordist,FEMININE,EASY,music
-Violinist,violinist,MASCULINE,EASY,music
-Violinistin,violinist,FEMININE,EASY,music
-Bratschist,violist,MASCULINE,EASY,music
-Bratschistin,violist,FEMININE,EASY,music
-Cellist,cellist,MASCULINE,EASY,music
-Cellistin,cellist,FEMININE,EASY,music
-Kontrabassist,double bassist,MASCULINE,EASY,music
-Kontrabassistin,double bassist,FEMININE,EASY,music
+Saft,juice,MASCULINE,EASY,food
+Wein,wine,MASCULINE,EASY,food
+Bier,beer,NEUTER,EASY,food
+Kuchen,cake,MASCULINE,EASY,food
+Schokolade,chocolate,FEMININE,EASY,food
+Honig,honey,MASCULINE,EASY,food
+Marmelade,jam,FEMININE,EASY,food
+Joghurt,yogurt,MASCULINE,EASY,food
+Wurst,sausage,FEMININE,EASY,food
+Schinken,ham,MASCULINE,EASY,food
+Mais,corn,MASCULINE,EASY,food
+Gurke,cucumber,FEMININE,EASY,food
+Paprika,bell pepper,FEMININE,EASY,food
+Erdbeere,strawberry,FEMININE,EASY,food
+Birne,pear,FEMININE,EASY,food
+Zitrone,lemon,FEMININE,EASY,food
+Traube,grape,FEMININE,EASY,food
+Pfirsich,peach,MASCULINE,EASY,food
+Kopf,head,MASCULINE,EASY,body
+Hand,hand,FEMININE,EASY,body
+Arm,arm,MASCULINE,EASY,body
+Bein,leg,NEUTER,EASY,body
+Fuß,foot,MASCULINE,EASY,body
+Auge,eye,NEUTER,EASY,body
+Ohr,ear,NEUTER,EASY,body
+Nase,nose,FEMININE,EASY,body
+Mund,mouth,MASCULINE,EASY,body
+Zahn,tooth,MASCULINE,EASY,body
+Haar,hair,NEUTER,EASY,body
+Gesicht,face,NEUTER,EASY,body
+Bauch,belly,MASCULINE,EASY,body
+Rücken,back,MASCULINE,EASY,body
+Herz,heart,NEUTER,EASY,body
+Haut,skin,FEMININE,EASY,body
+Finger,finger,MASCULINE,EASY,body
+Bahnhof,train station,MASCULINE,EASY,places
+Flughafen,airport,MASCULINE,EASY,places
+Krankenhaus,hospital,NEUTER,EASY,places
+Kirche,church,FEMININE,EASY,places
+Bank,bank,FEMININE,EASY,places
+Post,post office,FEMININE,EASY,places
+Toilette,toilet,FEMININE,EASY,places
+Spielplatz,playground,MASCULINE,EASY,places
+Brücke,bridge,FEMININE,EASY,places
+Küche,kitchen,FEMININE,EASY,home
+Bad,bathroom,NEUTER,EASY,home
+Schlafzimmer,bedroom,NEUTER,EASY,home
+Wohnzimmer,living room,NEUTER,EASY,home
+Zimmer,room,NEUTER,EASY,home
+Wohnung,apartment,FEMININE,EASY,home
+Bett,bed,NEUTER,EASY,furniture
+Lampe,lamp,FEMININE,EASY,objects
+Uhr,clock,FEMININE,EASY,objects
+Bild,picture,NEUTER,EASY,objects
+Handy,mobile phone,NEUTER,EASY,technology
+Hemd,shirt,NEUTER,EASY,clothing
+Hose,pants,FEMININE,EASY,clothing
+Kleid,dress,NEUTER,EASY,clothing
+Schuh,shoe,MASCULINE,EASY,clothing
+Jacke,jacket,FEMININE,EASY,clothing
+Mantel,coat,MASCULINE,EASY,clothing
+Hut,hat,MASCULINE,EASY,clothing
+Maus,mouse,FEMININE,EASY,animals
+Pferd,horse,NEUTER,EASY,animals
+Vogel,bird,MASCULINE,EASY,animals
+Kuh,cow,FEMININE,EASY,animals
+Schwein,pig,NEUTER,EASY,animals
+Huhn,chicken,NEUTER,EASY,animals
+Baum,tree,MASCULINE,EASY,nature
+Blume,flower,FEMININE,EASY,nature
+Gras,grass,NEUTER,EASY,nature
+Stein,stone,MASCULINE,EASY,nature
+Feuer,fire,NEUTER,EASY,nature
+Luft,air,FEMININE,EASY,nature
+Minute,minute,FEMININE,EASY,time
+Stunde,hour,FEMININE,EASY,time
+Farbe,color,FEMININE,EASY,objects
+Schriftsteller,writer,MASCULINE,MEDIUM,professions
+Schriftstellerin,writer,FEMININE,MEDIUM,professions
+Künstler,artist,MASCULINE,MEDIUM,professions
+Künstlerin,artist,FEMININE,MEDIUM,professions
+Ingenieur,engineer,MASCULINE,MEDIUM,professions
+Ingenieurin,engineer,FEMININE,MEDIUM,professions
+Programmierer,programmer,MASCULINE,MEDIUM,professions
+Programmiererin,programmer,FEMININE,MEDIUM,professions
+Verkäufer,salesperson,MASCULINE,MEDIUM,professions
+Verkäuferin,salesperson,FEMININE,MEDIUM,professions
+Kassierer,cashier,MASCULINE,MEDIUM,professions
+Kassiererin,cashier,FEMININE,MEDIUM,professions
+Buchhalter,accountant,MASCULINE,MEDIUM,professions
+Buchhalterin,accountant,FEMININE,MEDIUM,professions
+Anwalt,lawyer,MASCULINE,MEDIUM,professions
+Anwältin,lawyer,FEMININE,MEDIUM,professions
+Richter,judge,MASCULINE,MEDIUM,professions
+Richterin,judge,FEMININE,MEDIUM,professions
+Polizist,police officer,MASCULINE,MEDIUM,professions
+Polizistin,police officer,FEMININE,MEDIUM,professions
+Feuerwehrmann,firefighter,MASCULINE,MEDIUM,professions
+Feuerwehrfrau,firefighter,FEMININE,MEDIUM,professions
+Soldat,soldier,MASCULINE,MEDIUM,professions
+Soldatin,soldier,FEMININE,MEDIUM,professions
+Pilot,pilot,MASCULINE,MEDIUM,professions
+Pilotin,pilot,FEMININE,MEDIUM,professions
+Kapitän,captain,MASCULINE,MEDIUM,professions
+Kapitänin,captain,FEMININE,MEDIUM,professions
+Kellner,waiter,MASCULINE,MEDIUM,professions
+Kellnerin,waitress,FEMININE,MEDIUM,professions
+Koch,chef,MASCULINE,MEDIUM,professions
+Köchin,chef,FEMININE,MEDIUM,professions
+Fotograf,photographer,MASCULINE,MEDIUM,professions
+Fotografin,photographer,FEMININE,MEDIUM,professions
+Journalist,journalist,MASCULINE,MEDIUM,professions
+Journalistin,journalist,FEMININE,MEDIUM,professions
+Reporter,reporter,MASCULINE,MEDIUM,professions
+Reporterin,reporter,FEMININE,MEDIUM,professions
+Schauspieler,actor,MASCULINE,MEDIUM,professions
+Schauspielerin,actress,FEMININE,MEDIUM,professions
+Regisseur,director,MASCULINE,MEDIUM,professions
+Regisseurin,director,FEMININE,MEDIUM,professions
+Produzent,producer,MASCULINE,MEDIUM,professions
+Produzentin,producer,FEMININE,MEDIUM,professions
+Kameramann,cameraman,MASCULINE,MEDIUM,professions
+Kamerafrau,camerawoman,FEMININE,MEDIUM,professions
+Tontechniker,sound engineer,MASCULINE,MEDIUM,professions
+Tontechnikerin,sound engineer,FEMININE,MEDIUM,professions
+Beleuchter,lighting technician,MASCULINE,MEDIUM,professions
+Beleuchterin,lighting technician,FEMININE,MEDIUM,professions
+Maskenbildner,makeup artist,MASCULINE,MEDIUM,professions
+Maskenbildnerin,makeup artist,FEMININE,MEDIUM,professions
+Kostümbildner,costume designer,MASCULINE,MEDIUM,professions
+Kostümbildnerin,costume designer,FEMININE,MEDIUM,professions
+Bühnenbildner,set designer,MASCULINE,MEDIUM,professions
+Bühnenbildnerin,set designer,FEMININE,MEDIUM,professions
+Choreograf,choreographer,MASCULINE,MEDIUM,professions
+Choreografin,choreographer,FEMININE,MEDIUM,professions
+Tänzer,dancer,MASCULINE,MEDIUM,music
+Tänzerin,dancer,FEMININE,MEDIUM,music
+Sänger,singer,MASCULINE,MEDIUM,music
+Sängerin,singer,FEMININE,MEDIUM,music
+Gitarrist,guitarist,MASCULINE,MEDIUM,music
+Gitarristin,guitarist,FEMININE,MEDIUM,music
+Pianist,pianist,MASCULINE,MEDIUM,music
+Pianistin,pianist,FEMININE,MEDIUM,music
+Drummer,drummer,MASCULINE,MEDIUM,music
+Drummerin,drummer,FEMININE,MEDIUM,music
+Bassist,bassist,MASCULINE,MEDIUM,music
+Bassistin,bassist,FEMININE,MEDIUM,music
+Saxophonist,saxophonist,MASCULINE,MEDIUM,music
+Saxophonistin,saxophonist,FEMININE,MEDIUM,music
+Trompeter,trumpeter,MASCULINE,MEDIUM,music
+Trompeterin,trumpeter,FEMININE,MEDIUM,music
+Flötist,flutist,MASCULINE,MEDIUM,music
+Flötistin,flutist,FEMININE,MEDIUM,music
+Klarinettist,clarinetist,MASCULINE,MEDIUM,music
+Klarinettistin,clarinetist,FEMININE,MEDIUM,music
+Oboist,oboist,MASCULINE,MEDIUM,music
+Oboistin,oboist,FEMININE,MEDIUM,music
+Fagottist,bassoonist,MASCULINE,MEDIUM,music
+Fagottistin,bassoonist,FEMININE,MEDIUM,music
+Hornist,hornist,MASCULINE,MEDIUM,music
+Hornistin,hornist,FEMININE,MEDIUM,music
+Posaunist,trombonist,MASCULINE,MEDIUM,music
+Posaunistin,trombonist,FEMININE,MEDIUM,music
+Tubist,tubist,MASCULINE,MEDIUM,music
+Tubistin,tubist,FEMININE,MEDIUM,music
+Paukist,timpanist,MASCULINE,MEDIUM,music
+Paukistin,timpanist,FEMININE,MEDIUM,music
+Schlagzeuger,percussionist,MASCULINE,MEDIUM,music
+Schlagzeugerin,percussionist,FEMININE,MEDIUM,music
+Harpist,harpist,MASCULINE,MEDIUM,music
+Harpistin,harpist,FEMININE,MEDIUM,music
+Organist,organist,MASCULINE,MEDIUM,music
+Organistin,organist,FEMININE,MEDIUM,music
+Cembalist,harpsichordist,MASCULINE,MEDIUM,music
+Cembalistin,harpsichordist,FEMININE,MEDIUM,music
+Violinist,violinist,MASCULINE,MEDIUM,music
+Violinistin,violinist,FEMININE,MEDIUM,music
+Bratschist,violist,MASCULINE,MEDIUM,music
+Bratschistin,violist,FEMININE,MEDIUM,music
+Cellist,cellist,MASCULINE,MEDIUM,music
+Cellistin,cellist,FEMININE,MEDIUM,music
+Kontrabassist,double bassist,MASCULINE,MEDIUM,music
+Kontrabassistin,double bassist,FEMININE,MEDIUM,music
 Computer,computer,MASCULINE,MEDIUM,technology
 Telefon,telephone,NEUTER,MEDIUM,technology
 Zeitung,newspaper,FEMININE,MEDIUM,media
@@ -463,4 +540,4 @@ Gesellschaft,society,FEMININE,HARD,science
 Regierung,government,FEMININE,HARD,science
 Wirtschaft,economy,FEMININE,HARD,science
 Kultur,culture,FEMININE,HARD,science
-Natur,nature,FEMININE,HARD,science 
+Natur,nature,FEMININE,HARD,science
