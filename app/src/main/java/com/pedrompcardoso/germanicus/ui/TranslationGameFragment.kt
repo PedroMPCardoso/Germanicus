@@ -11,6 +11,7 @@ import com.pedrompcardoso.germanicus.R
 import com.pedrompcardoso.germanicus.game.GameMode
 import com.pedrompcardoso.germanicus.game.GameViewModel
 import com.pedrompcardoso.germanicus.databinding.FragmentTranslationGameBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class TranslationGameFragment : Fragment() {
     
@@ -18,6 +19,7 @@ class TranslationGameFragment : Fragment() {
     private val binding get() = _binding!!
     
     private val viewModel: GameViewModel by activityViewModels()
+    private var seenHeartRewardEvents = 0
     
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,6 +39,8 @@ class TranslationGameFragment : Fragment() {
     }
     
     private fun setupObservers() {
+        seenHeartRewardEvents = viewModel.heartRewardEvents.value ?: 0
+
         viewModel.currentWord.observe(viewLifecycleOwner) { word ->
             binding.germanWordTextView.text = word.german
         }
@@ -52,7 +56,14 @@ class TranslationGameFragment : Fragment() {
         }
 
         viewModel.remainingLives.observe(viewLifecycleOwner) { remainingLives ->
-            binding.livesTextView.text = getString(R.string.lives, remainingLives, GameViewModel.MAX_TRANSLATION_LIVES)
+            binding.livesTextView.text = buildHeartsText(remainingLives)
+        }
+
+        viewModel.heartRewardEvents.observe(viewLifecycleOwner) { rewardEvents ->
+            if (rewardEvents > seenHeartRewardEvents) {
+                seenHeartRewardEvents = rewardEvents
+                showHeartRewardDialog()
+            }
         }
 
         viewModel.translationOptions.observe(viewLifecycleOwner) { options ->
@@ -114,6 +125,20 @@ class TranslationGameFragment : Fragment() {
         binding.nextButton.setOnClickListener {
             viewModel.nextQuestion()
         }
+    }
+
+    private fun buildHeartsText(remainingLives: Int): String {
+        val filledHearts = "♥".repeat(remainingLives.coerceIn(0, GameViewModel.MAX_TRANSLATION_LIVES))
+        val emptyHearts = "♡".repeat((GameViewModel.MAX_TRANSLATION_LIVES - remainingLives).coerceAtLeast(0))
+        return filledHearts + emptyHearts
+    }
+
+    private fun showHeartRewardDialog() {
+        MaterialAlertDialogBuilder(requireContext())
+            .setTitle(getString(R.string.heart_added_title))
+            .setMessage(getString(R.string.heart_added_message))
+            .setPositiveButton(android.R.string.ok, null)
+            .show()
     }
     
     override fun onDestroyView() {

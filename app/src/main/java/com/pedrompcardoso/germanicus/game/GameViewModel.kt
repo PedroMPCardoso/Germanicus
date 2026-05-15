@@ -30,6 +30,9 @@ class GameViewModel : ViewModel() {
 
     private val _translationOptions = MutableLiveData<List<String>>()
     val translationOptions: LiveData<List<String>> = _translationOptions
+
+    private val _heartRewardEvents = MutableLiveData(0)
+    val heartRewardEvents: LiveData<Int> = _heartRewardEvents
     
     private val _gameMode = MutableLiveData<GameMode>()
     val gameMode: LiveData<GameMode> = _gameMode
@@ -46,6 +49,7 @@ class GameViewModel : ViewModel() {
     private var currentWordIndex = 0
     private var wordsForGame = listOf<GermanWord>()
     private var translationBlockIndex = 0
+    private var consecutiveCorrectTranslationAnswers = 0
     
     fun startGame(mode: GameMode, wordCount: Int = 10) {
         _gameMode.value = mode
@@ -55,7 +59,9 @@ class GameViewModel : ViewModel() {
         _showResult.value = false
         _isCorrect.value = null
         _remainingLives.value = MAX_TRANSLATION_LIVES
+        _heartRewardEvents.value = 0
         translationBlockIndex = 0
+        consecutiveCorrectTranslationAnswers = 0
 
         wordsForGame = if (mode == GameMode.TRANSLATION) {
             getNextTranslationBlock()
@@ -91,7 +97,10 @@ class GameViewModel : ViewModel() {
 
         if (correct) {
             _score.value = (_score.value ?: 0) + 1
+            consecutiveCorrectTranslationAnswers++
+            maybeRestoreTranslationLife()
         } else {
+            consecutiveCorrectTranslationAnswers = 0
             _remainingLives.value = ((_remainingLives.value ?: MAX_TRANSLATION_LIVES) - 1).coerceAtLeast(0)
         }
         
@@ -190,6 +199,15 @@ class GameViewModel : ViewModel() {
 
         if (_gameMode.value == GameMode.TRANSLATION) {
             _translationOptions.value = WordRepository.getTranslationOptions(word.english)
+        }
+    }
+
+    private fun maybeRestoreTranslationLife() {
+        val currentLives = _remainingLives.value ?: MAX_TRANSLATION_LIVES
+        if (consecutiveCorrectTranslationAnswers >= 5 && currentLives < MAX_TRANSLATION_LIVES) {
+            _remainingLives.value = currentLives + 1
+            consecutiveCorrectTranslationAnswers = 0
+            _heartRewardEvents.value = (_heartRewardEvents.value ?: 0) + 1
         }
     }
 } 
