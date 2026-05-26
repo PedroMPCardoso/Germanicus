@@ -741,3 +741,403 @@ Regierung,government,FEMININE,HARD,science
 Wirtschaft,economy,FEMININE,HARD,science
 Kultur,culture,FEMININE,HARD,science
 Natur,nature,FEMININE,HARD,science
+Lernen,learn,NEUTER,EASY,verbs
+Arbeiten,work,NEUTER,EASY,verbs
+Spielen,play,NEUTER,EASY,verbs
+Schlafen,sleep,NEUTER,EASY,verbs
+Gehen,go,NEUTER,EASY,verbs
+Kommen,come,NEUTER,EASY,verbs
+Machen,do,NEUTER,EASY,verbs
+Sagen,say,NEUTER,EASY,verbs
+Hören,hear,NEUTER,EASY,verbs
+Sehen,see,NEUTER,EASY,verbs
+Lesen,read,NEUTER,EASY,verbs
+Schreiben,write,NEUTER,EASY,verbs
+Sprechen,speak,NEUTER,EASY,verbs
+Fragen,ask,NEUTER,EASY,verbs
+Antworten,answer,NEUTER,EASY,verbs
+Kaufen,buy,NEUTER,EASY,verbs
+Verkaufen,sell,NEUTER,EASY,verbs
+Finden,find,NEUTER,EASY,verbs
+Suchen,search,NEUTER,EASY,verbs
+Brauchen,need,NEUTER,EASY,verbs
+Wollen,want,NEUTER,EASY,verbs
+Können,can,NEUTER,EASY,verbs
+Müssen,must,NEUTER,EASY,verbs
+Dürfen,be allowed,NEUTER,EASY,verbs
+Sollen,should,NEUTER,EASY,verbs
+Mögen,like,NEUTER,EASY,verbs
+Wissen,know,NEUTER,EASY,verbs
+Kennen,know,NEUTER,EASY,verbs
+Denken,think,NEUTER,EASY,verbs
+Glauben,believe,NEUTER,EASY,verbs
+Fühlen,feel,NEUTER,EASY,verbs
+Leben,live,NEUTER,EASY,verbs
+Wohnen,reside,NEUTER,EASY,verbs
+Bleiben,stay,NEUTER,EASY,verbs
+Stehen,stand,NEUTER,EASY,verbs
+Sitzen,sit,NEUTER,EASY,verbs
+Liegen,lie,NEUTER,EASY,verbs
+Laufen,run,NEUTER,EASY,verbs
+Fahren,drive,NEUTER,EASY,verbs
+Reisen,travel,NEUTER,EASY,verbs
+Fliegen,fly,NEUTER,EASY,verbs
+Schwimmen,swim,NEUTER,EASY,verbs
+Tanzen,dance,NEUTER,EASY,verbs
+Singen,sing,NEUTER,EASY,verbs
+Kochen,cook,NEUTER,EASY,verbs
+Backen,bake,NEUTER,EASY,verbs
+Waschen,wash,NEUTER,EASY,verbs
+Putzen,clean,NEUTER,EASY,verbs
+Öffnen,open,NEUTER,EASY,verbs
+Schließen,close,NEUTER,EASY,verbs
+Beginnen,begin,NEUTER,MEDIUM,verbs
+Enden,end,NEUTER,MEDIUM,verbs
+Helfen,help,NEUTER,MEDIUM,verbs
+Geben,give,NEUTER,MEDIUM,verbs
+Nehmen,take,NEUTER,MEDIUM,verbs
+Bringen,bring,NEUTER,MEDIUM,verbs
+Holen,fetch,NEUTER,MEDIUM,verbs
+Zeigen,show,NEUTER,MEDIUM,verbs
+Erklären,explain,NEUTER,MEDIUM,verbs
+Verstehen,understand,NEUTER,MEDIUM,verbs
+Wiederholen,repeat,NEUTER,MEDIUM,verbs
+Üben,practice,NEUTER,MEDIUM,verbs
+Benutzen,use,NEUTER,MEDIUM,verbs
+Tragen,carry,NEUTER,MEDIUM,verbs
+Ziehen,pull,NEUTER,MEDIUM,verbs
+Drücken,push,NEUTER,MEDIUM,verbs
+Werfen,throw,NEUTER,MEDIUM,verbs
+Fangen,catch,NEUTER,MEDIUM,verbs
+Bauen,build,NEUTER,MEDIUM,verbs
+Reparieren,repair,NEUTER,MEDIUM,verbs
+Bezahlen,pay,NEUTER,MEDIUM,verbs
+Sparen,save money,NEUTER,MEDIUM,verbs
+Kosten,cost,NEUTER,MEDIUM,verbs
+Gewinnen,win,NEUTER,MEDIUM,verbs
+Verlieren,lose,NEUTER,MEDIUM,verbs
+Treffen,meet,NEUTER,MEDIUM,verbs
+Besuchen,visit,NEUTER,MEDIUM,verbs
+Einladen,invite,NEUTER,MEDIUM,verbs
+Feiern,celebrate,NEUTER,MEDIUM,verbs
+Lachen,laugh,NEUTER,MEDIUM,verbs
+Weinen,cry,NEUTER,MEDIUM,verbs
+Hoffen,hope,NEUTER,HARD,verbs
+Warten,wait,NEUTER,HARD,verbs
+Planen,plan,NEUTER,HARD,verbs
+Entscheiden,decide,NEUTER,HARD,verbs
+Erinnern,remember,NEUTER,HARD,verbs
+Vergessen,forget,NEUTER,HARD,verbs
+Erzählen,tell,NEUTER,HARD,verbs
+Beschreiben,describe,NEUTER,HARD,verbs
+Vergleichen,compare,NEUTER,HARD,verbs
+Prüfen,check,NEUTER,HARD,verbs
+Wählen,choose,NEUTER,HARD,verbs
+Bestellen,order,NEUTER,HARD,verbs
+Reservieren,reserve,NEUTER,HARD,verbs
+Entschuldigen,apologize,NEUTER,HARD,verbs
+Empfehlen,recommend,NEUTER,HARD,verbs
+Erlauben,allow,NEUTER,HARD,verbs
+Verbieten,forbid,NEUTER,HARD,verbs
+Verbessern,improve,NEUTER,HARD,verbs
+Verändern,change,NEUTER,HARD,verbs
+Sekunde,second,FEMININE,EASY,time_calendar
+Augenblick,moment,MASCULINE,EASY,time_calendar
+Moment,moment,MASCULINE,EASY,time_calendar
+Vormittag,morning period,MASCULINE,EASY,time_calendar
+Tagesmitte,midday,FEMININE,EASY,time_calendar
+Nachmittagszeit,afternoon time,FEMININE,EASY,time_calendar
+Abendstunde,evening hour,FEMININE,EASY,time_calendar
+Mitternacht,midnight,FEMININE,EASY,time_calendar
+Kalender,calendar,MASCULINE,EASY,time_calendar
+Datum,date,NEUTER,EASY,time_calendar
+Kalenderwoche,calendar week,FEMININE,EASY,time_calendar
+Freitagabend,Friday evening,MASCULINE,EASY,time_calendar
+Werktag,weekday,MASCULINE,EASY,time_calendar
+Brückentag,bridge day,MASCULINE,EASY,time_calendar
+Montag,Monday,MASCULINE,EASY,time_calendar
+Dienstag,Tuesday,MASCULINE,EASY,time_calendar
+Mittwoch,Wednesday,MASCULINE,EASY,time_calendar
+Donnerstag,Thursday,MASCULINE,EASY,time_calendar
+Freitag,Friday,MASCULINE,EASY,time_calendar
+Samstag,Saturday,MASCULINE,EASY,time_calendar
+Sonntag,Sunday,MASCULINE,EASY,time_calendar
+Januar,January,MASCULINE,EASY,time_calendar
+Februar,February,MASCULINE,EASY,time_calendar
+März,March,MASCULINE,EASY,time_calendar
+April,April,MASCULINE,EASY,time_calendar
+Mai,May,MASCULINE,EASY,time_calendar
+Juni,June,MASCULINE,EASY,time_calendar
+Juli,July,MASCULINE,EASY,time_calendar
+August,August,MASCULINE,EASY,time_calendar
+September,September,MASCULINE,EASY,time_calendar
+Oktober,October,MASCULINE,EASY,time_calendar
+November,November,MASCULINE,EASY,time_calendar
+Dezember,December,MASCULINE,EASY,time_calendar
+Jahreszeit,season,FEMININE,MEDIUM,time_calendar
+Reise,trip,FEMININE,EASY,travel
+Ferienreise,holiday trip,FEMININE,EASY,travel
+Reisetasche,travel bag,FEMININE,EASY,travel
+Wanderrucksack,hiking backpack,MASCULINE,EASY,travel
+Pass,passport,MASCULINE,EASY,travel
+Ausweis,identity card,MASCULINE,EASY,travel
+Fahrkarte,ticket,FEMININE,EASY,travel
+Ticket,ticket,NEUTER,EASY,travel
+Gleis,platform,NEUTER,EASY,travel
+Abfahrt,departure,FEMININE,EASY,travel
+Ankunft,arrival,FEMININE,EASY,travel
+Verspätung,delay,FEMININE,EASY,travel
+Anschluss,connection,MASCULINE,MEDIUM,travel
+Fahrplan,timetable,MASCULINE,MEDIUM,travel
+Reiseführer,travel guide,MASCULINE,MEDIUM,travel
+Unterkunft,accommodation,FEMININE,MEDIUM,travel
+Hotelzimmer,hotel room,NEUTER,EASY,travel
+Rezeption,reception,FEMININE,EASY,travel
+Reservierung,reservation,FEMININE,MEDIUM,travel
+Flug,flight,MASCULINE,EASY,travel
+Linienflug,scheduled flight,MASCULINE,EASY,travel
+Gate,gate,NEUTER,EASY,travel
+Sicherheitskontrolle,security check,FEMININE,MEDIUM,travel
+Gepäck,luggage,NEUTER,EASY,travel
+Handgepäck,carry on luggage,NEUTER,MEDIUM,travel
+Mietwagen,rental car,MASCULINE,MEDIUM,travel
+Kreuzung,intersection,FEMININE,MEDIUM,travel
+Ampel,traffic light,FEMININE,EASY,travel
+Karte,map,FEMININE,EASY,travel
+Stadtplan,city map,MASCULINE,MEDIUM,travel
+Grenze,border,FEMININE,MEDIUM,travel
+Zoll,customs,MASCULINE,MEDIUM,travel
+Reiseversicherung,travel insurance,FEMININE,HARD,travel
+Fremdenverkehr,tourism,MASCULINE,HARD,travel
+Grundschule,primary school,FEMININE,EASY,school_work
+Schulklasse,school class,FEMININE,EASY,school_work
+Klassenzimmer,classroom,NEUTER,EASY,school_work
+Kreidetafel,chalkboard,FEMININE,EASY,school_work
+Schreibheft,writing notebook,NEUTER,EASY,school_work
+Gelstift,gel pen,MASCULINE,EASY,school_work
+Füller,fountain pen,MASCULINE,EASY,school_work
+Radiergummi,eraser,MASCULINE,EASY,school_work
+Lineal,ruler,NEUTER,EASY,school_work
+Schere,scissors,FEMININE,EASY,school_work
+Kleber,glue,MASCULINE,EASY,school_work
+Ranzen,school bag,MASCULINE,EASY,school_work
+Unterricht,lesson,MASCULINE,EASY,school_work
+Aufgabenblatt,worksheet,NEUTER,EASY,school_work
+Klassenarbeit,class test,FEMININE,MEDIUM,school_work
+Zensur,grade,FEMININE,EASY,school_work
+Abschlusszeugnis,final report card,NEUTER,MEDIUM,school_work
+Fach,subject,NEUTER,EASY,school_work
+Algebra,algebra,FEMININE,EASY,school_work
+Erdkunde,geography,FEMININE,MEDIUM,school_work
+Botanik,botany,FEMININE,MEDIUM,school_work
+Laborchemie,laboratory chemistry,FEMININE,MEDIUM,school_work
+Mechanik,mechanics,FEMININE,MEDIUM,school_work
+Arbeitsplatz,workplace,MASCULINE,EASY,school_work
+Homeoffice,home office,NEUTER,EASY,school_work
+Besprechung,meeting,FEMININE,MEDIUM,school_work
+Termin,appointment,MASCULINE,EASY,school_work
+Aufgabe,task,FEMININE,EASY,school_work
+Projekt,project,NEUTER,EASY,school_work
+Frist,deadline,FEMININE,MEDIUM,school_work
+Gehalt,salary,NEUTER,MEDIUM,school_work
+Kollege,colleague,MASCULINE,EASY,school_work
+Kollegin,colleague,FEMININE,EASY,school_work
+Vorgesetzter,supervisor,MASCULINE,HARD,school_work
+Gesundheit,health,FEMININE,EASY,health
+Krankheit,illness,FEMININE,EASY,health
+Fieber,fever,NEUTER,EASY,health
+Husten,cough,MASCULINE,EASY,health
+Schnupfen,cold,MASCULINE,EASY,health
+Schmerz,pain,MASCULINE,EASY,health
+Kopfschmerz,headache,MASCULINE,EASY,health
+Bauchschmerz,stomach ache,MASCULINE,EASY,health
+Halsschmerz,sore throat,MASCULINE,EASY,health
+Wunde,wound,FEMININE,EASY,health
+Verletzung,injury,FEMININE,MEDIUM,health
+Tablette,pill,FEMININE,EASY,health
+Medikament,medicine,NEUTER,EASY,health
+Rezept,prescription,NEUTER,MEDIUM,health
+Notdienst,emergency service,MASCULINE,EASY,health
+Krankenwagen,ambulance,MASCULINE,MEDIUM,health
+Notfall,emergency,MASCULINE,MEDIUM,health
+Unfall,accident,MASCULINE,EASY,health
+Spritze,injection,FEMININE,MEDIUM,health
+Verband,bandage,MASCULINE,MEDIUM,health
+Pflaster,plaster,NEUTER,EASY,health
+Therapie,therapy,FEMININE,MEDIUM,health
+Behandlung,treatment,FEMININE,MEDIUM,health
+Untersuchung,examination,FEMININE,MEDIUM,health
+Blutdruck,blood pressure,MASCULINE,MEDIUM,health
+Allergie,allergy,FEMININE,MEDIUM,health
+Erkältung,cold,FEMININE,EASY,health
+Grippe,flu,FEMININE,EASY,health
+Zahnarzt,dentist,MASCULINE,EASY,health
+Zahnärztin,dentist,FEMININE,EASY,health
+Patient,patient,MASCULINE,EASY,health
+Patientin,patient,FEMININE,EASY,health
+Sprechstunde,consultation hour,FEMININE,HARD,health
+Einkauf,purchase,MASCULINE,EASY,shopping
+Modegeschäft,fashion store,NEUTER,EASY,shopping
+Einkaufsstraße,shopping street,FEMININE,EASY,shopping
+Wochenmarkt,weekly market,MASCULINE,EASY,shopping
+Bioladen,organic store,MASCULINE,EASY,shopping
+Süßwarenladen,candy shop,MASCULINE,EASY,shopping
+Fischgeschäft,fish shop,NEUTER,EASY,shopping
+Parfümerie,perfume shop,FEMININE,EASY,shopping
+Outlet,outlet,NEUTER,MEDIUM,shopping
+Versandhaus,mail order company,NEUTER,MEDIUM,shopping
+Kasse,cash register,FEMININE,EASY,shopping
+Quittung,receipt,FEMININE,MEDIUM,shopping
+Rechnung,bill,FEMININE,EASY,shopping
+Preis,price,MASCULINE,EASY,shopping
+Rabatt,discount,MASCULINE,MEDIUM,shopping
+Angebot,offer,NEUTER,EASY,shopping
+Ware,goods,FEMININE,MEDIUM,shopping
+Produkt,product,NEUTER,EASY,shopping
+Größe,size,FEMININE,EASY,shopping
+Umkleidekabine,changing room,FEMININE,MEDIUM,shopping
+Einkaufswagen,shopping cart,MASCULINE,EASY,shopping
+Einkaufskorb,shopping basket,MASCULINE,EASY,shopping
+Gutschein,voucher,MASCULINE,MEDIUM,shopping
+Kreditkarte,credit card,FEMININE,EASY,shopping
+Bargeld,cash,NEUTER,EASY,shopping
+Münze,coin,FEMININE,EASY,shopping
+Schein,banknote,MASCULINE,EASY,shopping
+Rückgabe,return,FEMININE,MEDIUM,shopping
+Umtausch,exchange,MASCULINE,MEDIUM,shopping
+Lieferung,delivery,FEMININE,MEDIUM,shopping
+Bestellung,order,FEMININE,EASY,shopping
+Stammkunde,regular customer,MASCULINE,EASY,shopping
+Stammkundin,regular customer,FEMININE,EASY,shopping
+Morgenroutine,morning routine,FEMININE,EASY,daily_routines
+Wecker,alarm clock,MASCULINE,EASY,daily_routines
+Aufstehen,getting up,NEUTER,EASY,daily_routines
+Dusche,shower,FEMININE,EASY,daily_routines
+Duschgel,shower gel,NEUTER,EASY,daily_routines
+Haarbürste,hairbrush,FEMININE,EASY,daily_routines
+Rasierer,razor,MASCULINE,EASY,daily_routines
+Mundwasser,mouthwash,NEUTER,EASY,daily_routines
+Badetuch,bath towel,NEUTER,EASY,daily_routines
+Frühstück,breakfast,NEUTER,EASY,daily_routines
+Mittagessen,lunch,NEUTER,EASY,daily_routines
+Abendessen,dinner,NEUTER,EASY,daily_routines
+Pause,break,FEMININE,EASY,daily_routines
+Freizeit,free time,FEMININE,EASY,daily_routines
+Hobby,hobby,NEUTER,EASY,daily_routines
+Spaziergang,walk,MASCULINE,EASY,daily_routines
+Haushalt,household,MASCULINE,EASY,daily_routines
+Wäsche,laundry,FEMININE,EASY,daily_routines
+Wäschetrockner,dryer,MASCULINE,EASY,daily_routines
+Wischmopp,mop,MASCULINE,EASY,daily_routines
+Geschirr,dishes,NEUTER,EASY,daily_routines
+Spülmaschine,dishwasher,FEMININE,EASY,daily_routines
+Müll,trash,MASCULINE,EASY,daily_routines
+Mülleimer,trash can,MASCULINE,EASY,daily_routines
+Einkaufsliste,shopping list,FEMININE,EASY,daily_routines
+Kochtopf,cooking pot,MASCULINE,EASY,daily_routines
+Bratpfanne,frying pan,FEMININE,EASY,daily_routines
+Besteck,cutlery,NEUTER,EASY,daily_routines
+Teller,plate,MASCULINE,EASY,daily_routines
+Suppenschüssel,soup bowl,FEMININE,EASY,daily_routines
+Schlafenszeit,bedtime,FEMININE,EASY,daily_routines
+Gewohnheit,habit,FEMININE,MEDIUM,daily_routines
+Tagesablauf,daily routine,MASCULINE,MEDIUM,daily_routines
+Rechner,computer,MASCULINE,EASY,technology
+Laptop,laptop,MASCULINE,EASY,technology
+Tablet,tablet,NEUTER,EASY,technology
+Bildschirm,screen,MASCULINE,EASY,technology
+Tastatur,keyboard,FEMININE,EASY,technology
+Mauszeiger,cursor,MASCULINE,MEDIUM,technology
+Drucker,printer,MASCULINE,EASY,technology
+Kamera,camera,FEMININE,EASY,technology
+Kopfhörer,headphones,PLURAL,EASY,technology
+Lautsprecher,speaker,MASCULINE,EASY,technology
+Ladegerät,charger,NEUTER,EASY,technology
+Akku,battery,MASCULINE,EASY,technology
+Steckdose,power socket,FEMININE,EASY,technology
+Kabel,cable,NEUTER,EASY,technology
+Passwort,password,NEUTER,EASY,technology
+Benutzername,username,MASCULINE,MEDIUM,technology
+Datei,file,FEMININE,EASY,technology
+Ordner,folder,MASCULINE,EASY,technology
+Programm,program,NEUTER,EASY,technology
+Anwendung,application,FEMININE,MEDIUM,technology
+Webseite,website,FEMININE,EASY,technology
+Browser,browser,MASCULINE,EASY,technology
+Suchmaschine,search engine,FEMININE,MEDIUM,technology
+Nachricht,message,FEMININE,EASY,technology
+Anruf,call,MASCULINE,EASY,technology
+Kontakt,contact,MASCULINE,EASY,technology
+Netzwerk,network,NEUTER,MEDIUM,technology
+Internetverbindung,internet connection,FEMININE,MEDIUM,technology
+Speicher,storage,MASCULINE,MEDIUM,technology
+Sicherheit,security,FEMININE,MEDIUM,technology
+Einstellung,setting,FEMININE,MEDIUM,technology
+Aktualisierung,update,FEMININE,HARD,technology
+Datenschutz,data protection,MASCULINE,HARD,technology
+Sonnenstrahl,sunbeam,MASCULINE,EASY,weather_nature
+Mondschein,moonlight,MASCULINE,EASY,weather_nature
+Sternbild,constellation,NEUTER,EASY,weather_nature
+Firmament,firmament,NEUTER,EASY,weather_nature
+Regenwolke,rain cloud,FEMININE,EASY,weather_nature
+Nieselregen,drizzle,MASCULINE,EASY,weather_nature
+Schneefall,snowfall,MASCULINE,EASY,weather_nature
+Windstoß,gust of wind,MASCULINE,EASY,weather_nature
+Unwetter,severe weather,NEUTER,EASY,weather_nature
+Gewitter,thunderstorm,NEUTER,MEDIUM,weather_nature
+Wetterleuchten,heat lightning,NEUTER,MEDIUM,weather_nature
+Donnerschlag,thunderclap,MASCULINE,MEDIUM,weather_nature
+Dunst,haze,MASCULINE,MEDIUM,weather_nature
+Frost,frost,MASCULINE,EASY,weather_nature
+Höchsttemperatur,maximum temperature,FEMININE,EASY,weather_nature
+Hitzewelle,heat wave,FEMININE,EASY,weather_nature
+Kälteeinbruch,cold snap,MASCULINE,EASY,weather_nature
+Klima,climate,NEUTER,MEDIUM,weather_nature
+Umwelt,environment,FEMININE,MEDIUM,weather_nature
+Mischwald,mixed forest,MASCULINE,EASY,weather_nature
+Wiese,meadow,FEMININE,EASY,weather_nature
+Feld,field,NEUTER,EASY,weather_nature
+Strom,large river,MASCULINE,EASY,weather_nature
+Quellbach,spring stream,MASCULINE,MEDIUM,weather_nature
+Badesee,swimming lake,MASCULINE,EASY,weather_nature
+Weltmeer,ocean,NEUTER,EASY,weather_nature
+Eiland,islet,NEUTER,EASY,weather_nature
+Gipfel,peak,MASCULINE,EASY,weather_nature
+Berghang,mountain slope,MASCULINE,EASY,weather_nature
+Sandstrand,sandy beach,MASCULINE,EASY,weather_nature
+Steilküste,steep coast,FEMININE,MEDIUM,weather_nature
+Gewächs,plant growth,NEUTER,EASY,weather_nature
+Blatt,leaf,NEUTER,EASY,weather_nature
+Frohsinn,cheerfulness,MASCULINE,EASY,emotions
+Glücksgefühl,feeling of happiness,NEUTER,EASY,emotions
+Traurigkeit,sadness,FEMININE,EASY,emotions
+Furcht,fear,FEMININE,EASY,emotions
+Wut,anger,FEMININE,EASY,emotions
+Ärger,annoyance,MASCULINE,EASY,emotions
+Zuneigung,affection,FEMININE,EASY,emotions
+Hass,hate,MASCULINE,EASY,emotions
+Hoffnung,hope,FEMININE,EASY,emotions
+Sorge,worry,FEMININE,EASY,emotions
+Scham,shame,FEMININE,MEDIUM,emotions
+Stolz,pride,MASCULINE,MEDIUM,emotions
+Neid,envy,MASCULINE,MEDIUM,emotions
+Eifersucht,jealousy,FEMININE,MEDIUM,emotions
+Überraschung,surprise,FEMININE,MEDIUM,emotions
+Enttäuschung,disappointment,FEMININE,MEDIUM,emotions
+Erleichterung,relief,FEMININE,MEDIUM,emotions
+Zufriedenheit,satisfaction,FEMININE,MEDIUM,emotions
+Unzufriedenheit,dissatisfaction,FEMININE,HARD,emotions
+Dankbarkeit,gratitude,FEMININE,MEDIUM,emotions
+Vertrauen,trust,NEUTER,MEDIUM,emotions
+Misstrauen,distrust,NEUTER,HARD,emotions
+Geduld,patience,FEMININE,MEDIUM,emotions
+Ungeduld,impatience,FEMININE,HARD,emotions
+Mut,courage,MASCULINE,MEDIUM,emotions
+Langeweile,boredom,FEMININE,EASY,emotions
+Stress,stress,MASCULINE,EASY,emotions
+Ruhe,calm,FEMININE,EASY,emotions
+Einsamkeit,loneliness,FEMININE,MEDIUM,emotions
+Heimweh,homesickness,NEUTER,MEDIUM,emotions
+Mitgefühl,compassion,NEUTER,HARD,emotions
+Begeisterung,enthusiasm,FEMININE,MEDIUM,emotions
+Verwirrung,confusion,FEMININE,MEDIUM,emotions

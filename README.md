@@ -23,7 +23,7 @@ A fun and educational Android app for learning German vocabulary and grammar thr
 - **Modern UI Design**: Clean, card-based interface with Material Design
 - **Score Tracking**: Real-time score display and final results
 - **Progressive Difficulty**: Words categorized by difficulty level
-- **Comprehensive Word Database**: 45+ German words with translations and genders
+- **Comprehensive Word Database**: 800+ German words with translations and genders
 - **Responsive Design**: Works on different screen sizes
 
 ### 🎨 Visual Design
@@ -60,6 +60,43 @@ The app includes German words across three difficulty levels:
 - **Easy**: Basic nouns like Haus (house), Auto (car), Buch (book)
 - **Medium**: Common words like Computer, Telefon, Zeitung
 - **Hard**: Complex words like Geschichte, Wissenschaft, Entwicklung
+
+## Future Game Ideas
+
+- **Plural Form Guessing**: Show a singular noun and ask for the plural form.
+- **Article + Noun Guessing**: Show a German noun and ask for the full form with article.
+- **English to German Translation**: Show the English word and ask for the German equivalent.
+- **Verb Conjugation**: Show an infinitive plus a pronoun and ask for the conjugated verb.
+- **Past Participle Practice**: Show an infinitive and ask for the past participle.
+- **Separable Prefix Verbs**: Identify separable verbs or complete sentences with the prefix.
+- **Case Articles**: Practice nominative, accusative, dative, and genitive article forms.
+- **Dative/Accusative Prepositions**: Guess which case a preposition requires.
+- **Adjective Endings**: Complete adjective endings in short noun phrases.
+- **Word Category Guessing**: Guess whether a word is a noun, verb, adjective, adverb, or preposition.
+- **Opposites and Synonyms**: Practice related vocabulary through antonyms and synonyms.
+- **Compound Noun Breakdown**: Split compound nouns into their component meanings.
+- **Sentence Ordering**: Reorder scrambled words into a correct German sentence.
+- **Listening and Spelling**: Hear or view pronunciation prompts and type the German spelling.
+- **False Friends**: Practice words that look similar to English words but have different meanings.
+- **Category Quiz**: Guess the semantic category, such as food, body, travel, or professions.
+
+## Translation Vocabulary Ideas
+
+- **Adjectives**: Common descriptive words like colors, sizes, feelings, temperature, speed, quality, and personality.
+- **Adverbs**: Frequency, time, place, and manner words like often, already, here, outside, slowly, and together.
+- **Prepositions**: Common location, direction, time, and case-based prepositions.
+- **Pronouns and Determiners**: Personal pronouns, possessives, demonstratives, and question words.
+- **Numbers and Quantities**: Cardinal numbers, ordinal numbers, fractions, prices, and measurement words.
+- **Time and Calendar Words**: Days, months, seasons, holidays, clock time, and scheduling phrases.
+- **Travel and Directions**: Airport, train, hotel, navigation, tickets, transport, and tourism vocabulary.
+- **School and Work**: Classroom objects, subjects, office tools, meetings, tasks, and workplace roles.
+- **Health and Emergencies**: Symptoms, body states, medicine, appointments, hospital terms, and emergency phrases.
+- **Shopping and Services**: Stores, payments, sizes, returns, repairs, appointments, and customer-service words.
+- **Home and Daily Routine**: Chores, appliances, rooms, hygiene, getting ready, and household objects.
+- **Technology and Media**: Devices, apps, internet, email, photos, videos, and common technical actions.
+- **Nature and Weather**: Landscapes, plants, animals, weather states, climate, and outdoor activities.
+- **Emotions and Social Life**: Feelings, relationships, invitations, opinions, agreement, and disagreement.
+- **Useful Phrases**: Short everyday chunks like "I would like", "How much is it?", and "Where is...?".
 
 ## Development
 
