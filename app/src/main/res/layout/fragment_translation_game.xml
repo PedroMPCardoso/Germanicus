@@ -136,6 +136,16 @@
             android:backgroundTint="@color/primary_color"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:id="@+id/optionFourButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@android:color/white" />
+
     </LinearLayout>
 
     <androidx.cardview.widget.CardView

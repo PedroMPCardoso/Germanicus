@@ -62,7 +62,7 @@ object WordRepository {
         }
     }
 
-    fun getTranslationOptions(correctTranslation: String, optionCount: Int = 3): List<String> {
+    fun getTranslationOptions(correctTranslation: String, optionCount: Int = 4): List<String> {
         if (!isInitialized) {
             throw IllegalStateException("WordRepository not initialized. Call initialize() first.")
         }

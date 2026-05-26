@@ -67,7 +67,12 @@ class TranslationGameFragment : Fragment() {
         }
 
         viewModel.translationOptions.observe(viewLifecycleOwner) { options ->
-            val optionButtons = listOf(binding.optionOneButton, binding.optionTwoButton, binding.optionThreeButton)
+            val optionButtons = listOf(
+                binding.optionOneButton,
+                binding.optionTwoButton,
+                binding.optionThreeButton,
+                binding.optionFourButton
+            )
             optionButtons.forEachIndexed { index, button ->
                 val option = options.getOrNull(index)
                 button.text = option.orEmpty()
@@ -115,7 +120,12 @@ class TranslationGameFragment : Fragment() {
     }
     
     private fun setupClickListeners() {
-        val optionButtons = listOf(binding.optionOneButton, binding.optionTwoButton, binding.optionThreeButton)
+        val optionButtons = listOf(
+            binding.optionOneButton,
+            binding.optionTwoButton,
+            binding.optionThreeButton,
+            binding.optionFourButton
+        )
         optionButtons.forEach { button ->
             button.setOnClickListener {
                 viewModel.checkTranslationAnswer(button.text.toString())

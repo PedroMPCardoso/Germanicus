@@ -1141,3 +1141,399 @@ Heimweh,homesickness,NEUTER,MEDIUM,emotions
 Mitgefühl,compassion,NEUTER,HARD,emotions
 Begeisterung,enthusiasm,FEMININE,MEDIUM,emotions
 Verwirrung,confusion,FEMININE,MEDIUM,emotions
+Abholen,pick up,NEUTER,EASY,verbs
+Anrufen,call,NEUTER,EASY,verbs
+Aufräumen,tidy up,NEUTER,EASY,verbs
+Ausfüllen,fill out,NEUTER,EASY,verbs
+Ausmachen,turn off,NEUTER,EASY,verbs
+Einschalten,turn on,NEUTER,EASY,verbs
+Ausschalten,switch off,NEUTER,EASY,verbs
+Mitbringen,bring along,NEUTER,EASY,verbs
+Mitkommen,come along,NEUTER,EASY,verbs
+Vorlesen,read aloud,NEUTER,EASY,verbs
+Zuhören,listen,NEUTER,EASY,verbs
+Aufpassen,pay attention,NEUTER,EASY,verbs
+Einsteigen,get in,NEUTER,EASY,verbs
+Aussteigen,get out,NEUTER,EASY,verbs
+Umsteigen,transfer,NEUTER,MEDIUM,verbs
+Einpacken,pack,NEUTER,EASY,verbs
+Auspacken,unpack,NEUTER,EASY,verbs
+Anprobieren,try on,NEUTER,EASY,verbs
+Zurückgeben,return,NEUTER,EASY,verbs
+Tauschen,exchange,NEUTER,EASY,verbs
+Anmelden,register,NEUTER,MEDIUM,verbs
+Abmelden,sign out,NEUTER,MEDIUM,verbs
+Herunterladen,download,NEUTER,MEDIUM,verbs
+Hochladen,upload,NEUTER,MEDIUM,verbs
+Speichern,save,NEUTER,EASY,verbs
+Löschen,delete,NEUTER,EASY,verbs
+Drucken,print,NEUTER,EASY,verbs
+Kopieren,copy,NEUTER,EASY,verbs
+Einfügen,paste,NEUTER,EASY,verbs
+Markieren,mark,NEUTER,EASY,verbs
+Bearbeiten,edit,NEUTER,MEDIUM,verbs
+Senden,send,NEUTER,EASY,verbs
+Empfangen,receive,NEUTER,MEDIUM,verbs
+Teilen,share,NEUTER,EASY,verbs
+Klicken,click,NEUTER,EASY,verbs
+Scrollen,scroll,NEUTER,EASY,verbs
+Tippen,type,NEUTER,EASY,verbs
+Starten,start,NEUTER,EASY,verbs
+Stoppen,stop,NEUTER,EASY,verbs
+Neustarten,restart,NEUTER,MEDIUM,verbs
+Installieren,install,NEUTER,MEDIUM,verbs
+Deinstallieren,uninstall,NEUTER,HARD,verbs
+Aktualisieren,update,NEUTER,MEDIUM,verbs
+Verbinden,connect,NEUTER,MEDIUM,verbs
+Trennen,disconnect,NEUTER,MEDIUM,verbs
+Einloggen,log in,NEUTER,MEDIUM,verbs
+Ausloggen,log out,NEUTER,MEDIUM,verbs
+Sichern,back up,NEUTER,MEDIUM,verbs
+Wiederherstellen,restore,NEUTER,HARD,verbs
+Atmen,breathe,NEUTER,EASY,verbs
+Räuspern,clear throat,NEUTER,EASY,verbs
+Niesen,sneeze,NEUTER,EASY,verbs
+Bluten,bleed,NEUTER,MEDIUM,verbs
+Heilen,heal,NEUTER,MEDIUM,verbs
+Messen,measure,NEUTER,EASY,verbs
+Wiegen,weigh,NEUTER,EASY,verbs
+Untersuchen,examine,NEUTER,MEDIUM,verbs
+Behandeln,treat,NEUTER,MEDIUM,verbs
+Pflegen,care for,NEUTER,MEDIUM,verbs
+Kühlen,cool,NEUTER,EASY,verbs
+Wärmen,warm,NEUTER,EASY,verbs
+Entspannen,relax,NEUTER,EASY,verbs
+Trainieren,train,NEUTER,EASY,verbs
+Dehnen,stretch,NEUTER,MEDIUM,verbs
+Einkaufen,shop,NEUTER,EASY,verbs
+Anstehen,stand in line,NEUTER,MEDIUM,verbs
+Ausgeben,spend,NEUTER,EASY,verbs
+Anbieten,offer,NEUTER,MEDIUM,verbs
+Liefern,deliver,NEUTER,MEDIUM,verbs
+Packen,pack,NEUTER,EASY,verbs
+Schicken,send,NEUTER,EASY,verbs
+Entriegeln,unlock,NEUTER,EASY,verbs
+Verriegeln,lock,NEUTER,EASY,verbs
+Regnen,rain,NEUTER,EASY,verbs
+Schneien,snow,NEUTER,EASY,verbs
+Hageln,hail,NEUTER,MEDIUM,verbs
+Donnern,thunder,NEUTER,MEDIUM,verbs
+Blitzen,flash lightning,NEUTER,MEDIUM,verbs
+Scheinen,shine,NEUTER,EASY,verbs
+Wachsen,grow,NEUTER,EASY,verbs
+Blühen,bloom,NEUTER,EASY,verbs
+Pflanzen,plant,NEUTER,EASY,verbs
+Ernten,harvest,NEUTER,MEDIUM,verbs
+Sammeln,collect,NEUTER,EASY,verbs
+Füttern,feed,NEUTER,EASY,verbs
+Streichen,paint,NEUTER,MEDIUM,verbs
+Schneiden,cut,NEUTER,EASY,verbs
+Nähen,sew,NEUTER,MEDIUM,verbs
+Stricken,knit,NEUTER,MEDIUM,verbs
+Leihen,borrow,NEUTER,MEDIUM,verbs
+Verleihen,lend,NEUTER,MEDIUM,verbs
+Rechnen,calculate,NEUTER,EASY,verbs
+Zählen,count,NEUTER,EASY,verbs
+Zeichnen,draw,NEUTER,EASY,verbs
+Malen,paint,NEUTER,EASY,verbs
+Forschen,research,NEUTER,HARD,verbs
+Präsentieren,present,NEUTER,MEDIUM,verbs
+Diskutieren,discuss,NEUTER,MEDIUM,verbs
+Organisieren,organize,NEUTER,MEDIUM,verbs
+Verhandeln,negotiate,NEUTER,HARD,verbs
+Alt,old,NEUTER,EASY,adjectives
+Jung,young,NEUTER,EASY,adjectives
+Neu,new,NEUTER,EASY,adjectives
+Gut,good,NEUTER,EASY,adjectives
+Schlecht,bad,NEUTER,EASY,adjectives
+Groß,big,NEUTER,EASY,adjectives
+Klein,small,NEUTER,EASY,adjectives
+Lang,long,NEUTER,EASY,adjectives
+Kurz,short,NEUTER,EASY,adjectives
+Breit,wide,NEUTER,EASY,adjectives
+Schmal,narrow,NEUTER,EASY,adjectives
+Hoch,high,NEUTER,EASY,adjectives
+Niedrig,low,NEUTER,EASY,adjectives
+Schnell,fast,NEUTER,EASY,adjectives
+Langsam,slow,NEUTER,EASY,adjectives
+Stark,strong,NEUTER,EASY,adjectives
+Schwach,weak,NEUTER,EASY,adjectives
+Hell,bright,NEUTER,EASY,adjectives
+Dunkel,dark,NEUTER,EASY,adjectives
+Warm,warm,NEUTER,EASY,adjectives
+Kalt,cold,NEUTER,EASY,adjectives
+Heiß,hot,NEUTER,EASY,adjectives
+Kühl,cool,NEUTER,EASY,adjectives
+Trocken,dry,NEUTER,EASY,adjectives
+Nass,wet,NEUTER,EASY,adjectives
+Sauber,clean,NEUTER,EASY,adjectives
+Schmutzig,dirty,NEUTER,EASY,adjectives
+Voll,full,NEUTER,EASY,adjectives
+Leer,empty,NEUTER,EASY,adjectives
+Leicht,light,NEUTER,EASY,adjectives
+Schwer,heavy,NEUTER,EASY,adjectives
+Einfach,simple,NEUTER,EASY,adjectives
+Schwierig,difficult,NEUTER,EASY,adjectives
+Richtig,correct,NEUTER,EASY,adjectives
+Falsch,wrong,NEUTER,EASY,adjectives
+Wichtig,important,NEUTER,EASY,adjectives
+Unwichtig,unimportant,NEUTER,EASY,adjectives
+Teuer,expensive,NEUTER,EASY,adjectives
+Billig,cheap,NEUTER,EASY,adjectives
+Schön,beautiful,NEUTER,EASY,adjectives
+Hässlich,ugly,NEUTER,EASY,adjectives
+Freundlich,friendly,NEUTER,EASY,adjectives
+Unfreundlich,unfriendly,NEUTER,EASY,adjectives
+Glücklich,happy,NEUTER,EASY,adjectives
+Traurig,sad,NEUTER,EASY,adjectives
+Müde,tired,NEUTER,EASY,adjectives
+Wach,awake,NEUTER,EASY,adjectives
+Krank,sick,NEUTER,EASY,adjectives
+Gesund,healthy,NEUTER,EASY,adjectives
+Hungrig,hungry,NEUTER,EASY,adjectives
+Durstig,thirsty,NEUTER,EASY,adjectives
+Laut,loud,NEUTER,EASY,adjectives
+Leise,quiet,NEUTER,EASY,adjectives
+Ruhig,calm,NEUTER,EASY,adjectives
+Aufgeregt,excited,NEUTER,EASY,adjectives
+Nervös,nervous,NEUTER,EASY,adjectives
+Sicher,safe,NEUTER,EASY,adjectives
+Unsicher,unsafe,NEUTER,EASY,adjectives
+Offen,open,NEUTER,EASY,adjectives
+Geschlossen,closed,NEUTER,EASY,adjectives
+Frei,free,NEUTER,EASY,adjectives
+Besetzt,occupied,NEUTER,EASY,adjectives
+Pünktlich,punctual,NEUTER,MEDIUM,adjectives
+Spät,late,NEUTER,EASY,adjectives
+Früh,early,NEUTER,EASY,adjectives
+Nah,near,NEUTER,EASY,adjectives
+Fern,distant,NEUTER,EASY,adjectives
+Links,left,NEUTER,EASY,adjectives
+Rechts,right,NEUTER,EASY,adjectives
+Gerade,straight,NEUTER,EASY,adjectives
+Rund,round,NEUTER,EASY,adjectives
+Eckig,angular,NEUTER,MEDIUM,adjectives
+Weich,soft,NEUTER,EASY,adjectives
+Hart,hard,NEUTER,EASY,adjectives
+Scharf,sharp,NEUTER,EASY,adjectives
+Stumpf,blunt,NEUTER,MEDIUM,adjectives
+Süß,sweet,NEUTER,EASY,adjectives
+Sauer,sour,NEUTER,EASY,adjectives
+Salzig,salty,NEUTER,EASY,adjectives
+Bitter,bitter,NEUTER,EASY,adjectives
+Frisch,fresh,NEUTER,EASY,adjectives
+Faul,rotten,NEUTER,EASY,adjectives
+Reif,ripe,NEUTER,EASY,adjectives
+Roh,raw,NEUTER,EASY,adjectives
+Gekocht,cooked,NEUTER,EASY,adjectives
+Gebraten,fried,NEUTER,MEDIUM,adjectives
+Gebogen,bent,NEUTER,MEDIUM,adjectives
+Geradeaus,straight ahead,NEUTER,EASY,adjectives
+Modern,modern,NEUTER,EASY,adjectives
+Altmodisch,old fashioned,NEUTER,MEDIUM,adjectives
+Beliebt,popular,NEUTER,MEDIUM,adjectives
+Unbekannt,unknown,NEUTER,MEDIUM,adjectives
+Berühmt,famous,NEUTER,MEDIUM,adjectives
+Selten,rare,NEUTER,MEDIUM,adjectives
+Häufig,frequent,NEUTER,MEDIUM,adjectives
+Gemeinsam,shared,NEUTER,MEDIUM,adjectives
+Allein,alone,NEUTER,EASY,adjectives
+Privat,private,NEUTER,MEDIUM,adjectives
+Öffentlich,public,NEUTER,MEDIUM,adjectives
+Möglich,possible,NEUTER,MEDIUM,adjectives
+Unmöglich,impossible,NEUTER,MEDIUM,adjectives
+Nötig,necessary,NEUTER,MEDIUM,adjectives
+Fertig,finished,NEUTER,EASY,adjectives
+Bereit,ready,NEUTER,EASY,adjectives
+Ähnlich,similar,NEUTER,MEDIUM,adjectives
+Verschieden,different,NEUTER,MEDIUM,adjectives
+Gleich,same,NEUTER,EASY,adjectives
+Echt,real,NEUTER,EASY,adjectives
+Fremd,foreign,NEUTER,MEDIUM,adjectives
+Eigen,own,NEUTER,MEDIUM,adjectives
+Gefährlich,dangerous,NEUTER,MEDIUM,adjectives
+Praktisch,practical,NEUTER,MEDIUM,adjectives
+Bequem,comfortable,NEUTER,MEDIUM,adjectives
+Gemütlich,cozy,NEUTER,MEDIUM,adjectives
+Höflich,polite,NEUTER,MEDIUM,adjectives
+Ehrlich,honest,NEUTER,MEDIUM,adjectives
+Kreativ,creative,NEUTER,MEDIUM,adjectives
+Geduldig,patient,NEUTER,MEDIUM,adjectives
+Täglich,daily,NEUTER,EASY,adverbs
+Wöchentlich,weekly,NEUTER,EASY,adverbs
+Monatlich,monthly,NEUTER,EASY,adverbs
+Jährlich,yearly,NEUTER,EASY,adverbs
+Immer,always,NEUTER,EASY,adverbs
+Nie,never,NEUTER,EASY,adverbs
+Gelegentlich,occasionally,NEUTER,EASY,adverbs
+Manchmal,sometimes,NEUTER,EASY,adverbs
+Oft,often,NEUTER,EASY,adverbs
+Meistens,mostly,NEUTER,EASY,adverbs
+Normalerweise,normally,NEUTER,MEDIUM,adverbs
+Gewöhnlich,usually,NEUTER,MEDIUM,adverbs
+Heute,today,NEUTER,EASY,adverbs
+Gestern,yesterday,NEUTER,EASY,adverbs
+Morgenfrüh,tomorrow morning,NEUTER,EASY,adverbs
+Übermorgen,the day after tomorrow,NEUTER,MEDIUM,adverbs
+Vorgestern,the day before yesterday,NEUTER,MEDIUM,adverbs
+Jetzt,now,NEUTER,EASY,adverbs
+Sofort,immediately,NEUTER,EASY,adverbs
+Umgehend,right away,NEUTER,EASY,adverbs
+Bald,soon,NEUTER,EASY,adverbs
+Später,later,NEUTER,EASY,adverbs
+Früher,earlier,NEUTER,EASY,adverbs
+Zuerst,first,NEUTER,EASY,adverbs
+Danach,after that,NEUTER,EASY,adverbs
+Dann,then,NEUTER,EASY,adverbs
+Schließlich,finally,NEUTER,MEDIUM,adverbs
+Endlich,finally,NEUTER,EASY,adverbs
+Schon,already,NEUTER,EASY,adverbs
+Noch,still,NEUTER,EASY,adverbs
+Wieder,again,NEUTER,EASY,adverbs
+Nochmals,once more,NEUTER,MEDIUM,adverbs
+Hier,here,NEUTER,EASY,adverbs
+Dort,there,NEUTER,EASY,adverbs
+Da,there,NEUTER,EASY,adverbs
+Überall,everywhere,NEUTER,EASY,adverbs
+Nirgendwo,nowhere,NEUTER,MEDIUM,adverbs
+Drinnen,inside,NEUTER,EASY,adverbs
+Draußen,outside,NEUTER,EASY,adverbs
+Oben,above,NEUTER,EASY,adverbs
+Unten,below,NEUTER,EASY,adverbs
+Vorne,in front,NEUTER,EASY,adverbs
+Hinten,behind,NEUTER,EASY,adverbs
+Nebenan,next door,NEUTER,EASY,adverbs
+Linkerhand,on the left,NEUTER,EASY,adverbs
+Rechterhand,on the right,NEUTER,EASY,adverbs
+Geradewegs,straight ahead,NEUTER,EASY,adverbs
+Zurück,back,NEUTER,EASY,adverbs
+Vorwärts,forward,NEUTER,EASY,adverbs
+Rückwärts,backward,NEUTER,EASY,adverbs
+Rasch,quickly,NEUTER,EASY,adverbs
+Gemächlich,slowly,NEUTER,EASY,adverbs
+Still,quietly,NEUTER,EASY,adverbs
+Hörbar,audibly,NEUTER,EASY,adverbs
+Gern,gladly,NEUTER,EASY,adverbs
+Lieber,preferably,NEUTER,EASY,adverbs
+Vielleicht,maybe,NEUTER,EASY,adverbs
+Bestimmt,certainly,NEUTER,EASY,adverbs
+Sicherlich,surely,NEUTER,MEDIUM,adverbs
+Wahrscheinlich,probably,NEUTER,MEDIUM,adverbs
+Leider,unfortunately,NEUTER,EASY,adverbs
+Zum Glück,fortunately,NEUTER,EASY,adverbs
+Fast,almost,NEUTER,EASY,adverbs
+Kaum,hardly,NEUTER,MEDIUM,adverbs
+Sehr,very,NEUTER,EASY,adverbs
+Ziemlich,rather,NEUTER,EASY,adverbs
+Besonders,especially,NEUTER,MEDIUM,adverbs
+Nur,only,NEUTER,EASY,adverbs
+Auch,also,NEUTER,EASY,adverbs
+Außerdem,besides,NEUTER,MEDIUM,adverbs
+Trotzdem,nevertheless,NEUTER,MEDIUM,adverbs
+Deshalb,therefore,NEUTER,MEDIUM,adverbs
+Darum,therefore,NEUTER,MEDIUM,adverbs
+Zusammen,together,NEUTER,EASY,adverbs
+Solo,alone,NEUTER,EASY,adverbs
+Anders,differently,NEUTER,EASY,adverbs
+Genauso,exactly the same,NEUTER,MEDIUM,adverbs
+Sogar,even,NEUTER,MEDIUM,adverbs
+Mindestens,at least,NEUTER,MEDIUM,adverbs
+Höchstens,at most,NEUTER,MEDIUM,adverbs
+Ungefähr,approximately,NEUTER,MEDIUM,adverbs
+Genau,exactly,NEUTER,EASY,adverbs
+Etwa,about,NEUTER,EASY,adverbs
+Mehr,more,NEUTER,EASY,adverbs
+Weniger,less,NEUTER,EASY,adverbs
+Genug,enough,NEUTER,EASY,adverbs
+Zu,too,NEUTER,EASY,adverbs
+So,so,NEUTER,EASY,adverbs
+Wie,how,NEUTER,EASY,adverbs
+Warum,why,NEUTER,EASY,adverbs
+Wann,when,NEUTER,EASY,adverbs
+Wo,where,NEUTER,EASY,adverbs
+Wohin,where to,NEUTER,EASY,adverbs
+Woher,where from,NEUTER,EASY,adverbs
+Irgendwo,somewhere,NEUTER,MEDIUM,adverbs
+Irgendwann,sometime,NEUTER,MEDIUM,adverbs
+Jedenfalls,in any case,NEUTER,HARD,adverbs
+Allerdings,however,NEUTER,HARD,adverbs
+An,at,NEUTER,EASY,prepositions
+Auf,on,NEUTER,EASY,prepositions
+In,in,NEUTER,EASY,prepositions
+Neben,next to,NEUTER,EASY,prepositions
+Unter,under,NEUTER,EASY,prepositions
+Über,over,NEUTER,EASY,prepositions
+Vor,in front of,NEUTER,EASY,prepositions
+Hinter,behind,NEUTER,EASY,prepositions
+Zwischen,between,NEUTER,EASY,prepositions
+Mit,with,NEUTER,EASY,prepositions
+Ohne,without,NEUTER,EASY,prepositions
+Für,for,NEUTER,EASY,prepositions
+Gegen,against,NEUTER,EASY,prepositions
+Um,around,NEUTER,EASY,prepositions
+Durch,through,NEUTER,EASY,prepositions
+Bis,until,NEUTER,EASY,prepositions
+Aus,from,NEUTER,EASY,prepositions
+Bei,at the place of,NEUTER,EASY,prepositions
+Nach,after,NEUTER,EASY,prepositions
+Seit,since,NEUTER,EASY,prepositions
+Von,from,NEUTER,EASY,prepositions
+Hin zu,toward,NEUTER,EASY,prepositions
+Ab,from onward,NEUTER,EASY,prepositions
+Entlang,along,NEUTER,MEDIUM,prepositions
+Während,during,NEUTER,MEDIUM,prepositions
+Wegen,because of,NEUTER,MEDIUM,prepositions
+Trotz,despite,NEUTER,MEDIUM,prepositions
+Statt,instead of,NEUTER,MEDIUM,prepositions
+Anstatt,instead of,NEUTER,MEDIUM,prepositions
+Außer,except,NEUTER,MEDIUM,prepositions
+Innerhalb,within,NEUTER,MEDIUM,prepositions
+Außerhalb,outside of,NEUTER,MEDIUM,prepositions
+Oberhalb,above,NEUTER,MEDIUM,prepositions
+Unterhalb,below,NEUTER,MEDIUM,prepositions
+Diesseits,on this side of,NEUTER,HARD,prepositions
+Jenseits,beyond,NEUTER,HARD,prepositions
+Beiderseits,on both sides of,NEUTER,HARD,prepositions
+Anlässlich,on the occasion of,NEUTER,HARD,prepositions
+Angesichts,in view of,NEUTER,HARD,prepositions
+Aufgrund,because of,NEUTER,MEDIUM,prepositions
+Infolge,as a result of,NEUTER,HARD,prepositions
+Mithilfe,with the help of,NEUTER,MEDIUM,prepositions
+Zugunsten,in favor of,NEUTER,HARD,prepositions
+Zulasten,at the expense of,NEUTER,HARD,prepositions
+Zwecks,for the purpose of,NEUTER,HARD,prepositions
+Nach Aussage,according to,NEUTER,MEDIUM,prepositions
+Gemäß,according to,NEUTER,MEDIUM,prepositions
+Entsprechend,corresponding to,NEUTER,HARD,prepositions
+Samt,together with,NEUTER,MEDIUM,prepositions
+Inklusive,including,NEUTER,MEDIUM,prepositions
+Exklusive,excluding,NEUTER,MEDIUM,prepositions
+Pro,per,NEUTER,EASY,prepositions
+Contra,against,NEUTER,MEDIUM,prepositions
+Je,per each,NEUTER,EASY,prepositions
+Gegenüber,opposite,NEUTER,MEDIUM,prepositions
+Nahe,near,NEUTER,MEDIUM,prepositions
+Unweit,not far from,NEUTER,HARD,prepositions
+Weit weg von,far from,NEUTER,MEDIUM,prepositions
+Abseits,away from,NEUTER,HARD,prepositions
+Inmitten,in the middle of,NEUTER,HARD,prepositions
+Ringsum,all around,NEUTER,MEDIUM,prepositions
+Rund um,around,NEUTER,MEDIUM,prepositions
+Bis zu,up to,NEUTER,EASY,prepositions
+Im Laufe,during the course of,NEUTER,HARD,prepositions
+Im Rahmen,within the framework of,NEUTER,HARD,prepositions
+Im Namen,in the name of,NEUTER,MEDIUM,prepositions
+Im Auftrag,on behalf of,NEUTER,MEDIUM,prepositions
+Winzig,tiny,NEUTER,EASY,adjectives
+Riesig,huge,NEUTER,EASY,adjectives
+Kürzlich,recently,NEUTER,MEDIUM,adverbs
+Demnächst,soon,NEUTER,MEDIUM,adverbs
+Seitens,on the part of,NEUTER,HARD,prepositions
+Betreffs,concerning,NEUTER,HARD,prepositions
+Mangels,for lack of,NEUTER,HARD,prepositions
+Ungeachtet,regardless of,NEUTER,HARD,prepositions
+Kraft,by virtue of,NEUTER,HARD,prepositions
+Vermöge,by means of,NEUTER,HARD,prepositions
+Vorbehaltlich,subject to,NEUTER,HARD,prepositions
+Abzüglich,minus,NEUTER,MEDIUM,prepositions
+Zuzüglich,plus,NEUTER,MEDIUM,prepositions

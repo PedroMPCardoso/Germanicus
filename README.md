@@ -23,7 +23,7 @@ A fun and educational Android app for learning German vocabulary and grammar thr
 - **Modern UI Design**: Clean, card-based interface with Material Design
 - **Score Tracking**: Real-time score display and final results
 - **Progressive Difficulty**: Words categorized by difficulty level
-- **Comprehensive Word Database**: 800+ German words with translations and genders
+- **Comprehensive Word Database**: 1,500+ German words with translations and genders
 - **Responsive Design**: Works on different screen sizes
 
 ### 🎨 Visual Design
