@@ -49,6 +49,7 @@ class GameResultFragment : Fragment() {
             when (args.gameMode) {
                 "Gender Guessing" -> findNavController().navigate(R.id.action_gameResultFragment_to_genderGameFragment)
                 "Translation" -> findNavController().navigate(R.id.action_gameResultFragment_to_translationGameFragment)
+                "Word Completion" -> findNavController().navigate(R.id.action_gameResultFragment_to_wordCompletionGameFragment)
             }
         }
         

@@ -2,9 +2,11 @@
     <string name="app_name">Germanicus</string>
     <string name="gender_guessing">Gender Guessing</string>
     <string name="translation">Translation</string>
+    <string name="word_completion">Word Completion</string>
     <string name="play_again">Play Again</string>
     <string name="main_menu">Main Menu</string>
     <string name="submit_answer">Submit Answer</string>
+    <string name="submit">Submit</string>
     <string name="next">Next</string>
     <string name="view_results">View Results</string>
     <string name="game_over">Game Over!</string>
@@ -22,9 +24,11 @@
     <string name="enter_answer">Enter your answer</string>
     <string name="what_gender">What is the gender of this word?</string>
     <string name="what_translation">What is the English translation?</string>
+    <string name="what_word_completion">Complete the German translation</string>
     <string name="learn_german_fun">Learn German the Fun Way!</string>
     <string name="guess_gender_description">Guess the gender of German words</string>
     <string name="translate_description">Translate between German and English</string>
+    <string name="word_completion_description">Build the German word from letter tiles</string>
     <string name="games">Games</string>
     <string name="learn">Learn</string>
     <string name="gender_lookup">Gender Lookup</string>
@@ -40,5 +44,8 @@
     <string name="translation_result">Translation: %1$s</string>
     <string name="translating">Translating...</string>
     <string name="translation_error">Translation failed. Please check your internet connection.</string>
+    <string name="backspace">Delete</string>
+    <string name="clear">Clear</string>
+    <string name="tip">Tip</string>
     <string name="version">Version 1.0</string>
 </resources>

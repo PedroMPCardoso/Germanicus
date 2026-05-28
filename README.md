@@ -4,7 +4,7 @@ A fun and educational Android app for learning German vocabulary and grammar thr
 
 ## Features
 
-### 🎮 Two Game Modes
+### 🎮 Three Game Modes
 
 1. **Gender Guessing Mode**
    - Guess the correct gender (der, die, das) of German words
@@ -17,6 +17,12 @@ A fun and educational Android app for learning German vocabulary and grammar thr
    - Type your answer and submit
    - Case-insensitive answer checking
    - Real-time feedback
+
+3. **Word Completion Mode**
+   - See an English word and build the German translation
+   - Select from shuffled letter tiles instead of typing with the keyboard
+   - Includes extra decoy letters for challenge
+   - Uses German words with 12 characters or fewer
 
 ### 🎯 Game Features
 

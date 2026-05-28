@@ -37,6 +37,10 @@ class MainMenuFragment : Fragment() {
         binding.translationGameCard.setOnClickListener {
             findNavController().navigate(R.id.action_mainMenuFragment_to_translationGameFragment)
         }
+
+        binding.wordCompletionGameCard.setOnClickListener {
+            findNavController().navigate(R.id.action_mainMenuFragment_to_wordCompletionGameFragment)
+        }
         
         binding.genderLookupCard.setOnClickListener {
             findNavController().navigate(R.id.action_mainMenuFragment_to_genderLookupFragment)

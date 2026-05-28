@@ -24,6 +24,12 @@
         tools:layout="@layout/fragment_translation_game" />
 
     <fragment
+        android:id="@+id/wordCompletionGameFragment"
+        android:name="com.pedrompcardoso.germanicus.ui.WordCompletionGameFragment"
+        android:label="Word Completion"
+        tools:layout="@layout/fragment_word_completion_game" />
+
+    <fragment
         android:id="@+id/genderLookupFragment"
         android:name="com.pedrompcardoso.germanicus.ui.GenderLookupFragment"
         android:label="Gender Lookup"
@@ -54,6 +60,10 @@
         app:destination="@id/translationGameFragment" />
 
     <action
+        android:id="@+id/action_mainMenuFragment_to_wordCompletionGameFragment"
+        app:destination="@id/wordCompletionGameFragment" />
+
+    <action
         android:id="@+id/action_mainMenuFragment_to_genderLookupFragment"
         app:destination="@id/genderLookupFragment" />
 
@@ -66,6 +76,10 @@
         app:destination="@id/gameResultFragment" />
 
     <action
+        android:id="@+id/action_wordCompletionGameFragment_to_gameResultFragment"
+        app:destination="@id/gameResultFragment" />
+
+    <action
         android:id="@+id/action_gameResultFragment_to_genderGameFragment"
         app:destination="@id/genderGameFragment"
         app:popUpTo="@id/mainMenuFragment"
@@ -74,6 +88,12 @@
     <action
         android:id="@+id/action_gameResultFragment_to_translationGameFragment"
         app:destination="@id/translationGameFragment"
+        app:popUpTo="@id/mainMenuFragment"
+        app:popUpToInclusive="false" />
+
+    <action
+        android:id="@+id/action_gameResultFragment_to_wordCompletionGameFragment"
+        app:destination="@id/wordCompletionGameFragment"
         app:popUpTo="@id/mainMenuFragment"
         app:popUpToInclusive="false" />
 
