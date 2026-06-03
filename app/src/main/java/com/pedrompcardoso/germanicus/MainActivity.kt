@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.pedrompcardoso.germanicus.audio.BackgroundMusicPlayer
 import com.pedrompcardoso.germanicus.data.WordRepository
 import com.pedrompcardoso.germanicus.databinding.ActivityMainBinding
 
@@ -24,6 +25,23 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
         
         setupActionBarWithNavController(navController)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        BackgroundMusicPlayer.play(this)
+    }
+
+    override fun onStop() {
+        BackgroundMusicPlayer.pause()
+        super.onStop()
+    }
+
+    override fun onDestroy() {
+        if (isFinishing) {
+            BackgroundMusicPlayer.release()
+        }
+        super.onDestroy()
     }
     
     override fun onSupportNavigateUp(): Boolean {

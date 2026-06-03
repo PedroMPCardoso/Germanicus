@@ -113,6 +113,10 @@ This app demonstrates modern Android development practices:
 - LiveData for reactive UI updates
 - Material Design for consistent theming
 
+## Background Music
+
+Add background music files to `app/src/main/res/raw/` using lowercase underscore names, such as `main_theme.mp3` or `study_loop.mp3`. The app automatically loads every raw resource in that folder, shuffles them, and plays them as background music while the app is visible. If the folder is empty, music playback is skipped.
+
 ---
 
 **Version**: 1.0  
